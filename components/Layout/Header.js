@@ -9,6 +9,8 @@ import {
   SButton,
   SearchBar,
   SiteLayout,
+  SubMenuContainer,
+  SubMenuItem,
 } from "@/StyledComponents/LayoutStyled";
 import { Icon } from "@iconify/react";
 import React from "react";
@@ -38,10 +40,12 @@ const Header = () => {
         </RightDiv>
       </HeaderDiv>
       <MenuContainer>
-        <MenuItem>Trending</MenuItem>
+        <MenuItem className="active">Trending</MenuItem>
         <MenuItem>New</MenuItem>
-        <MenuItem>All Politics</MenuItem>
-        <MenuItem>Sports Culture</MenuItem>
+        <MenuItem>All</MenuItem>
+        <MenuItem>Politics</MenuItem>
+        <MenuItem>Sports</MenuItem>
+        <MenuItem>Culture</MenuItem>
         <MenuItem>Crypto</MenuItem>
         <MenuItem>Climate</MenuItem>
         <MenuItem>Economics</MenuItem>
@@ -50,7 +54,7 @@ const Header = () => {
         <MenuItem>Financials</MenuItem>
         <MenuItem>Tech & Science</MenuItem>
         <MenuItem>Health World</MenuItem>
-          <MenuItem>Climate</MenuItem>
+        <MenuItem>Climate</MenuItem>
         <MenuItem>Economics</MenuItem>
         <MenuItem>Mentions</MenuItem>
         <MenuItem>Companies</MenuItem>
@@ -58,6 +62,29 @@ const Header = () => {
         <MenuItem>Tech & Science</MenuItem>
         <MenuItem>Health World</MenuItem>
       </MenuContainer>
+      <SubMenuContainer>
+        <SubMenuItem className="active">Trending</SubMenuItem>
+        <SubMenuItem>New</SubMenuItem>
+        <SubMenuItem>All</SubMenuItem>
+        <SubMenuItem>Politics</SubMenuItem>
+        <SubMenuItem>Sports</SubMenuItem>
+        <SubMenuItem>Culture</SubMenuItem>
+        <SubMenuItem>Crypto</SubMenuItem>
+        <SubMenuItem>Climate</SubMenuItem>
+        <SubMenuItem>Economics</SubMenuItem>
+        <SubMenuItem>Mentions</SubMenuItem>
+        <SubMenuItem>Companies</SubMenuItem>
+        <SubMenuItem>Financials</SubMenuItem>
+        <SubMenuItem>Tech & Science</SubMenuItem>
+        <SubMenuItem>Health World</SubMenuItem>
+        <SubMenuItem>Climate</SubMenuItem>
+        <SubMenuItem>Economics</SubMenuItem>
+        <SubMenuItem>Mentions</SubMenuItem>
+        <SubMenuItem>Companies</SubMenuItem>
+        <SubMenuItem>Financials</SubMenuItem>
+        <SubMenuItem>Tech & Science</SubMenuItem>
+        <SubMenuItem>Health World</SubMenuItem>
+      </SubMenuContainer>
     </SiteLayout>
   );
 };

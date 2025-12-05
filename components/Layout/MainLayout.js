@@ -6,9 +6,11 @@ import { MarketSection } from "@/StyledComponents/LayoutStyled";
 export default function MainLayout({ children }) {
   return (
     <main>
-      <Header />
-      <MarketSection>{children}</MarketSection>
-      <Footer />
+  
+        <Header />
+        <MarketSection>{children}</MarketSection>
+        <Footer />
+     
     </main>
   );
 }
