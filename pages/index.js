@@ -1,6 +1,6 @@
-import InfoSec from "@/components/LandingPage/InfoSec";
 import MainLayout from "../components/Layout/MainLayout";
 import Head from "next/head";
+import ContentMenu from "@/components/LandingPage/ContentMenu";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        <InfoSec />
+        <ContentMenu />
       </MainLayout>
     </>
   );

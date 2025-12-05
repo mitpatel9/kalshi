@@ -158,6 +158,7 @@ export const SubMenuItem = styled.div`
 `;
 
 //information section
+export const TradeMainContainer = styled.div``;
 export const InfoMainContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -187,4 +188,115 @@ export const MainTitle = styled.div`
 export const SubTitle = styled.div`
   font-weight: 600;
   font-size: 12px;
+`;
+
+//trade posting section
+export const TradeContainer = styled.div``;
+export const TradeListing = styled.div`
+  border: 1px solid #e6e8eb;
+  border-radius: 10px;
+  padding: 0.5rem;
+`;
+export const PostFistSection = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0px;
+  justify-content: space-between;
+`;
+export const PostImage = styled.div`
+  display: flex;
+
+  .image {
+    border-radius: 8px;
+    margin-right: 0.5rem;
+  }
+`;
+export const PostTitle = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+`;
+export const PostChances = styled.div`
+  .circle {
+    width: 80px;
+    height: 40px;
+    border-radius: 120px 120px 0 0;
+    background: conic-gradient(green 0deg 180deg, red 180deg 360deg);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .center {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+`;
+export const PostSecondSectionContainer = styled.div``;
+export const PostSecondSection = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px;
+`;
+export const TradeListingName = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const TradeButton = styled.div`
+  display: flex;
+`;
+
+export const TradePrencentage = styled.div`
+ font-weight: 600;
+  font-size: 12px;
+`;
+export const TradeButtonYes = styled.div`
+  background: #e4f7ea;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  color: #30a159;
+  font-weight: 600;
+  margin-right: 2px;
+`;
+export const TradeButtonNo = styled.div`
+  background: #fceded;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #e35969;
+  font-weight: 600;
+`;
+export const PostThirdSection = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const TradeVolume = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const TradeTypes = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const TradeIcone = styled.div``;
+export const TradeButton2 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around !impotant;
+`;
+export const TradeButtonYes2 = styled.div`
+  background: #e4f7ea;
+  padding: 5rem;
+  border-radius: 5px;
+  color: #30a159;
+  font-weight: 600;
+  margin-right: 2px;
+`;
+export const TradeButtonNo2 = styled.div`
+  background: #fceded;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #e35969;
+  font-weight: 600;
 `;
