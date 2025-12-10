@@ -12,7 +12,6 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import React from "react";
 import Test from "../../asset/Image/test.jpg";
-import { CommonDiv } from "@/StyledComponents/CommonStyled";
 
 const MarketHeader = () => {
   return (
