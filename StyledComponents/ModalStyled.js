@@ -10,6 +10,7 @@ export const LeftJoining = styled.div`
   align-items: center;
   justify-content: center;
   width: 50%;
+  padding: 1.5rem;
 `;
 export const WelcomeContainer = styled.div``;
 export const RightJoining = styled.div`
@@ -22,7 +23,7 @@ export const WelcomeText = styled.div`
   text-align: center;
 `;
 export const WelcomeSubText = styled.div`
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #b5b5b5;
   text-align: center;

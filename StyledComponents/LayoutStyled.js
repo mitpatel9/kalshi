@@ -203,6 +203,7 @@ export const TradeImage = styled.div`
 export const TradeHeaderText = styled.div`
   font-weight: 600;
   font-size: 12px;
+  cursor:pointer;
 `;
 export const TradeChanceChart = styled.div``;
 

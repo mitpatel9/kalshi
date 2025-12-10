@@ -25,10 +25,24 @@ const JoiningModal = (props) => {
       <JoinningContainer>
         {/* left section */}
         <LeftJoining>
-          <WelcomeContainer>
-            <WelcomeText>Welcome to Kalshi</WelcomeText>
-            <WelcomeSubText>dasdasdasdas</WelcomeSubText>
-          </WelcomeContainer>
+          {switchTab == "login" && (
+            <WelcomeContainer>
+              <WelcomeText>Welcome to Kalshi</WelcomeText>
+              <WelcomeSubText>
+                We’re glad to see you again. Log in to access your account,
+                manage your information, and continue where you left off.
+              </WelcomeSubText>
+            </WelcomeContainer>
+          )}
+          {switchTab == "sign" && (
+            <WelcomeContainer>
+              <WelcomeText>Welcome Back!</WelcomeText>
+              <WelcomeSubText>
+                Create your account to get started. Join us and enjoy quick
+                access to your dashboard, personalized features, and more.
+              </WelcomeSubText>
+            </WelcomeContainer>
+          )}
         </LeftJoining>
         {/* right section */}
         <RightJoining>
