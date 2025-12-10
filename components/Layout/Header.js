@@ -1,3 +1,4 @@
+import { Hr } from "@/StyledComponents/CommonStyled";
 import {
   HeaderDiv,
   LButton,
@@ -85,6 +86,7 @@ const Header = () => {
         <SubMenuItem>Tech & Science</SubMenuItem>
         <SubMenuItem>Health World</SubMenuItem>
       </SubMenuContainer>
+      <Hr />
     </SiteLayout>
   );
 };

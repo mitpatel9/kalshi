@@ -205,75 +205,19 @@ export const TradeImage = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
-  width: 70%;
+  width: 80%;
 
   .image {
-    height: 48px;
-    width: 48px;
+    max-height: 38px;
+    max-width: 38px;
     border-radius: 10px;
   }
 `;
 export const TradeHeaderText = styled.div`
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
 `;
-export const TradeChanceChart = styled.div`
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  --p: ${(props) => props.percent};
-  .gauge {
-    position: relative;
-    width: 60px;
-    height: 35px;
-    margin: 0px;
-  }
-
-  /* Light gray semicircle */
-  .gauge::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 90px 90px 0 0;
-    border: 6px solid red;
-    border-bottom: none;
-    box-sizing: border-box;
-  }
-
-  /* The fill color that rotates to match percentage */
-  .gauge-fill {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 90px 90px 0 0;
-    border: 6px solid green;
-    border-bottom: none;
-    box-sizing: border-box;
-    transform-origin: center bottom;
-    transform: rotate(calc(var(--percent) * 1.8deg));
-  }
-
-  /* Small circle on left edge */
-  .dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: ${(props) => props.yes};
-    border-radius: 50%;
-    left: -2px;
-    top: 34px;
-  }
-
-  /* Label text */
-  .label {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 10px;
-    color: #777;
-  }
-`;
+export const TradeChanceChart = styled.div``;
 
 export const TradeMiddle = styled.div`
   padding: 0.5rem 0rem;
@@ -334,7 +278,7 @@ export const TradeFooter = styled.div`
 `;
 export const TradeVolume = styled.div`
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   color: #b5b5b5;
 `;
 export const TradeTypes = styled.div`
@@ -342,14 +286,53 @@ export const TradeTypes = styled.div`
   gap: 0.5rem;
   align-items: center;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   color: #b5b5b5;
 `;
 export const TradeIcon = styled.div`
   display: flex;
   gap: 0.5rem;
   .icons {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+  }
+`;
+
+//footer section
+export const FooterContainer = styled.div`
+  width: 100%;
+  padding: 2rem 2rem;
+  background-color: #ededed;
+`;
+export const FooterHeading = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  color: #b5b5b5;
+`;
+export const FooterText = styled.div`
+  font-weight: 400;
+  font-size: 10px;
+  color: #b5b5b5;
+`;
+export const FooterMenu = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+export const MenuItemFooter = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+  color: #b5b5b5;
+  &:hover {
+    color: #000;
+  }
+`;
+
+export const FooterCopyWrite = styled.div`
+  display: flex;
+  justify-content: space-between;
+  .icons {
+    margin: 0rem 0.2rem;
+    width: 22px;
+    height: 22px;
   }
 `;
