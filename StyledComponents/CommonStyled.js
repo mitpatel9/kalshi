@@ -5,3 +5,8 @@ export const Hr = styled.div`
   border-bottom: 1px solid #dbdbdb;
 `;
 export const CommonDiv = styled.div``;
+
+export const ErrorMessage = styled.div`
+  font-size: 12px;
+  color: #ff0000;
+`;

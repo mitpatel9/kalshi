@@ -62,20 +62,7 @@ export const SearchBar = styled.div`
     display: none;
   }
 `;
-export const LButton = styled.div`
-  background: transparent;
-  color: #fd7979;
-  font-weight: 600;
-  padding: 8px 14px;
-  border: 2px solid #fd7979;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 12px;
-  transition: 0.25s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-`;
+
 export const SButton = styled.div`
   background: #fd7979;
   color: #fff;
