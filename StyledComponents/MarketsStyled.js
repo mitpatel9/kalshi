@@ -5,6 +5,7 @@ export const MarketsLayout = styled.div`
 `;
 export const MarketLeftLayout = styled.div`
   width: 70%;
+  padding-right: 0.5rem;
 `;
 export const MarketRightLayout = styled.div`
   width: 30%;
@@ -34,7 +35,7 @@ export const MarketTopHedText = styled.div`
 export const MarketTopIcon = styled.div`
   display: flex;
   gap: 0.5rem;
-  margin-right: 0.5rem;
+
   .icons {
     width: 18px;
     height: 18px;
@@ -250,11 +251,11 @@ export const AlsoBuyContainer = styled.div`
   scrollbar-width: none;
   height: 500px;
   border: 1px solid #fd7979;
-   padding: 0.5rem;
+  padding: 0.5rem;
 `;
 export const AlsoBuyTopHeading = styled.div`
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0.5rem 0rem;
 `;
 export const AlsoBuyTradeContainer = styled.div`
@@ -283,4 +284,176 @@ export const AlsoBuyPercentage = styled.div`
 export const AlsoBuyHedText = styled.div`
   font-weight: 600;
   font-size: 16px;
+`;
+
+//Rules summary
+export const RulesContainer = styled.div``;
+export const RulesHedContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const RulesHeding = styled.div`
+  font-weight: 600;
+  font-size: 24px;
+`;
+export const RulesIcon = styled.div`
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+`;
+export const RulesOutcomeDropDown = styled.div`
+  font-weight: 400;
+  font-size: 16px;
+  color: #fd7979;
+  cursor: pointer;
+  span {
+    width: 18px;
+    height: 18px;
+  }
+`;
+export const RulesDesc = styled.div`
+  font-weight: 400;
+  font-size: 16px;
+  padding: 1rem 0rem;
+`;
+export const RulesButton = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+export const FullRulesBtn = styled.div`
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  background: #ffff;
+  color: #fd7979;
+  border: 1px solid #fd7979;
+`;
+export const HelpCenterBtn = styled.div`
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  color: #fd7979;
+  border: 1px solid #fd7979;
+`;
+
+//Market Context section
+export const ContectContainer = styled.div`
+  margin: 1rem 0rem;
+  border: 1px solid #fd7979;
+  border-radius: 5px;
+`;
+export const MarketContextHeading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+`;
+export const ContextHed = styled.div`
+  font-weight: 600;
+  font-size: 18px;
+`;
+export const ContextIcon = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+  color: #fd7979;
+`;
+export const MarketContextDesc = styled.div`
+  padding: 0rem 1rem;
+  padding-bottom: 1rem;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+`;
+
+//Timeline and payout
+export const TimeLineContainer = styled.div``;
+export const TimeLineHedContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const TimeLineLeft = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .icons {
+    width: 24px;
+    height: 24px;
+  }
+`;
+
+export const TimeLineHedText = styled.div`
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+`;
+export const TimeLineRight = styled.div`
+  .icons {
+    width: 18px;
+    height: 18px;
+  }
+`;
+export const TimeLineDesc = styled.div`
+  margin: 1rem 0rem;
+`;
+export const TimeLineVerticle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 3px;
+  position: relative;
+
+  /* vertical line */
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e0e0e0;
+  }
+`;
+export const TimeLineItem = styled.div`
+  position: relative;
+  padding-left: 24px;
+  color: ${({ active }) => (active ? "#000" : "#888")};
+`;
+export const TimeLineDot = styled.div`
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: ${({ active }) => (active ? "#21c36f" : "#ccc")};
+  border: ${({ active }) => (active ? "3px solid #21c36f" : "3px solid #ccc")};
+`;
+export const TimeLineTitle = styled.div`
+  font-size: 14px;
+  font-weight: 600;
+`;
+export const TimeLineSubTitle = styled.div`
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+`;
+
+
+export const TimeLineText = styled.div`
+  font-size: 12px;
+  color: #777;
+    margin: 1rem 0rem;
 `;
