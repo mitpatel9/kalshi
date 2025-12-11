@@ -61,6 +61,7 @@ const OrderBuySell = () => {
         <OrderNoBtn>No 19¢</OrderNoBtn>
       </OrderButton>
 
+      {/* order Contrac section */}
       <OrderContract>
         <ContracContainer>
           <ContracHedText>Contracts</ContracHedText>

@@ -70,7 +70,7 @@ export const MarketEndDate = styled.div`
 //oder buy sell section
 export const OrderContaier = styled.div`
   padding: 1rem;
-  border: 2px solid #fd7979;
+  border: 1px solid #fd7979;
   border-radius: 10px;
 `;
 export const OrderTopHedding = styled.div`
@@ -187,7 +187,6 @@ export const ContracInput = styled.div`
     outline: none;
     box-shadow: none;
     border: none;
-   
 
     &::placeholder {
       color: #828282;
@@ -239,4 +238,49 @@ export const OderTradeButton = styled.div`
   margin-top: 1rem;
   background: #fd7979;
   color: #fff;
+`;
+
+//also buying peopel section
+export const AlsoBuyContainer = styled.div`
+  margin: 0.5rem 0rem;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  height: 500px;
+  border: 1px solid #fd7979;
+   padding: 0.5rem;
+`;
+export const AlsoBuyTopHeading = styled.div`
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0.5rem 0rem;
+`;
+export const AlsoBuyTradeContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const AlsoBuyContent = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0rem;
+  cursor: pointer;
+
+  .image {
+    max-height: 48px;
+    max-width: 48px;
+    border-radius: 10px;
+  }
+`;
+export const AlsoBuyPercentage = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+`;
+export const AlsoBuyHedText = styled.div`
+  font-weight: 600;
+  font-size: 16px;
 `;
