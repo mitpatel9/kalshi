@@ -10,15 +10,17 @@ import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import { Input } from "reactstrap";
 import JoiningModal from "../Models/JoiningModal";
+import { useRouter } from "next/router";
 
 const HeaderLayout = () => {
+  const router =useRouter();
   const [isJoin, setIsJoin] = useState(false);
   const toggle = () => setIsJoin(!isJoin);
   return (
     <>
       <HeaderDiv>
         <LeftDiv>
-          <Logo>Klashi</Logo>
+          <Logo onClick={()=> router.push("/")}>Klashi</Logo>
         </LeftDiv>
         <RightDiv>
           <SearchBar>

@@ -506,7 +506,7 @@ export const CommentMenu = styled.div`
 `;
 export const CommentMenuItem = styled.div`
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   color: #cccccc;
   cursor: pointer;
 

@@ -24,7 +24,9 @@ export const RightDiv = styled.div`
   align-items: center;
   gap: 0.15rem;
 `;
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  cursor: pointer;
+`;
 export const SearchBar = styled.div`
   position: relative;
   width: 280px;
@@ -203,7 +205,7 @@ export const TradeImage = styled.div`
 export const TradeHeaderText = styled.div`
   font-weight: 600;
   font-size: 12px;
-  cursor:pointer;
+  cursor: pointer;
 `;
 export const TradeChanceChart = styled.div``;
 
