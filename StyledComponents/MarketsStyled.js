@@ -272,18 +272,18 @@ export const AlsoBuyContent = styled.div`
   cursor: pointer;
 
   .image {
-    max-height: 48px;
-    max-width: 48px;
+    max-height: 42px;
+    max-width: 42px;
     border-radius: 10px;
   }
 `;
 export const AlsoBuyPercentage = styled.div`
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 `;
 export const AlsoBuyHedText = styled.div`
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 `;
 
 //Rules summary
@@ -389,14 +389,14 @@ export const TimeLineLeft = styled.div`
   gap: 0.5rem;
 
   .icons {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
   }
 `;
 
 export const TimeLineHedText = styled.div`
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
 `;
 export const TimeLineRight = styled.div`
@@ -451,9 +451,249 @@ export const TimeLineSubTitle = styled.div`
   margin-top: 2px;
 `;
 
-
 export const TimeLineText = styled.div`
   font-size: 12px;
   color: #777;
-    margin: 1rem 0rem;
+  margin: 1rem 0rem;
+`;
+
+//Trading prohibitions
+export const ProhibitionContainer = styled.div``;
+export const ProhibitionHedContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const ProhibitionLeft = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .icons {
+    width: 18px;
+    height: 18px;
+  }
+`;
+export const ProhibitionHedText = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+`;
+export const ProhibitionRight = styled.div`
+  .icons {
+    width: 18px;
+    height: 18px;
+  }
+`;
+export const ProhibitionDesc = styled.div`
+  margin: 1rem 0rem;
+`;
+export const ProhibitionText = styled.div`
+  padding-left: 1.5rem;
+  font-size: 12px;
+  color: #777;
+  margin: 1rem 0rem;
+`;
+
+//comment section
+export const CommentContainer = styled.div`
+  margin-top: 1rem;
+`;
+export const CommentMenu = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+`;
+export const CommentMenuItem = styled.div`
+  font-weight: 600;
+  font-size: 22px;
+  color: #cccccc;
+  cursor: pointer;
+
+  &.active {
+    color: #000;
+  }
+`;
+export const CommetntBox = styled.div`
+  padding: 8px 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+`;
+export const CommentTextArea = styled.div`
+  textarea {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::placeholder {
+      color: #828282;
+      opacity: 0.7;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &:focus {
+      outline: none;
+      border: 0;
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+`;
+export const CommentBottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const CommentLeft = styled.div``;
+export const CommentRight = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+`;
+export const CommentCount = styled.div`
+  font-weight: 600;
+  font-size: 10px;
+  color: #cccccc;
+`;
+export const CommentBtn = styled.div`
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  border: none;
+`;
+export const CommentArea = styled.div``;
+
+//Ideas
+//Activity
+export const ActivityConatainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const ActivityLeft = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+export const ActivityImage = styled.div`
+  .image {
+    max-height: 32px;
+    max-width: 32px;
+    border-radius: 10px;
+  }
+`;
+export const ActivityDesc = styled.div``;
+export const ActivityUserName = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+`;
+export const ActivityTractions = styled.div`
+  font-weight: 600;
+  font-size: 10px;
+  color: #000;
+
+  .yes {
+    font-weight: 600;
+    font-size: 11px;
+    color: #30a159;
+  }
+  .no {
+    font-weight: 600;
+    font-size: 11px;
+    color: #e33939;
+  }
+
+  .contracts {
+    font-weight: 600;
+    font-size: 10px;
+    color: #cccccc;
+  }
+`;
+export const ActivityRight = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+  color: #cccccc;
+`;
+
+//TopHolder
+export const HolderContainer = styled.div``;
+export const HolderDropDown = styled.div`
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem;
+      width: fit-content;
+      font-weight: 600;
+  font-size: 16px;
+`;
+export const HolderListing = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top:1rem;
+`;
+export const HolderLeft = styled.div`
+  width: 50%;
+  margin-right: 0.5rem;
+`;
+export const HolderHedPart = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const HolderHedTitle = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+`;
+export const HolderHedSharesTitle = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+  color: #000;
+`;
+export const HolderDataPart = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const HolderDesc = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+export const HolderImage = styled.div`
+  .image {
+    max-height: 32px;
+    max-width: 32px;
+    border-radius: 10px;
+  }
+`;
+export const HolderName = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+`;
+export const HolderHedShares = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  &.yes {
+    color: #30a159;
+  }
+  &.no {
+    color: #e33939;
+  }
+`;
+export const HolderRight = styled.div`
+  width: 50%;
 `;
