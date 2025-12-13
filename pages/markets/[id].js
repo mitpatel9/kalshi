@@ -1,6 +1,7 @@
 import HeaderLayout from "@/components/LandingPage/HeaderLayout";
 import AlsoBuy from "@/components/MarketLayout/AlsoBuy";
 import BottomSec from "@/components/MarketLayout/BottomSec";
+import ImpotantNotice from "@/components/MarketLayout/ImpotantNotice";
 import MarketChart from "@/components/MarketLayout/MarketChart";
 import MarketContext from "@/components/MarketLayout/MarketContext";
 import MarketHeader from "@/components/MarketLayout/MarketHeader";
@@ -26,6 +27,7 @@ const MarketData = () => {
           <MarketHeader />
           <MarketChart />
           <MarketOutCome />
+          <ImpotantNotice/>
           <MarketContext />
           <RulesSummary />
           <TimelineAndPayout />

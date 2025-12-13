@@ -314,7 +314,7 @@ export const RulesOutcomeDropDown = styled.div`
 `;
 export const RulesDesc = styled.div`
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   padding: 1rem 0rem;
 `;
 export const RulesButton = styled.div`
@@ -635,14 +635,14 @@ export const HolderDropDown = styled.div`
   align-items: center;
   gap: 2rem;
   padding: 0.5rem;
-      width: fit-content;
-      font-weight: 600;
+  width: fit-content;
+  font-weight: 600;
   font-size: 16px;
 `;
 export const HolderListing = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top:1rem;
+  margin-top: 1rem;
 `;
 export const HolderLeft = styled.div`
   width: 50%;
@@ -696,4 +696,72 @@ export const HolderHedShares = styled.div`
 `;
 export const HolderRight = styled.div`
   width: 50%;
+`;
+
+//Impotant Notice
+export const ImpotentNoticeContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #e4f7ea;
+  border: 1px solid #30a159;
+  border-radius: 5px;
+`;
+export const ImpotentText = styled.div`
+  color: #000;
+  font-size: 14px;
+  span {
+    font-weight: 600;
+    font-size: 15px;
+  }
+`;
+
+// Ideas comment
+export const IdeaContainer = styled.div`
+  margin-top: 1rem;
+`;
+
+export const IdeaCommentContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`;
+export const IdeaSubComment = styled.div`
+  display: flex;
+  gap: 0.5rem;
+    margin-top: 0.5rem;
+`;
+export const IdeaImage = styled.div`
+  .image {
+    max-height: 32px;
+    max-width: 32px;
+    border-radius: 10px;
+  }
+`;
+export const IdeaContent = styled.div``;
+export const IdeaUserName = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
+  span {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: #c4c0c0ff;
+    font-size: 10px;
+  }
+`;
+export const UserComment = styled.div`
+  font-weight: 400;
+  color: #000;
+  font-size: 12px;
+`;
+export const IdeaIcons = styled.div`
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  font-weight: 600;
+  color: #c4c0c0ff;
+  font-size: 14px;
+  cursor: pointer;
 `;
