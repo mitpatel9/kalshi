@@ -13,6 +13,7 @@ const Header = () => {
   return (
     <SiteLayout>
       <HeaderLayout />
+     
       <MenuContainer>
         <MenuItem className="active">Trending</MenuItem>
         <MenuItem>New</MenuItem>

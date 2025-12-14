@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import { Input } from "reactstrap";
 import JoiningModal from "../Models/JoiningModal";
 import { useRouter } from "next/router";
+import { Hr } from "@/StyledComponents/CommonStyled";
 
 const HeaderLayout = () => {
   const router =useRouter();
@@ -34,7 +35,7 @@ const HeaderLayout = () => {
             <span onClick={() => toggle()}>Get Started</span>
           </SButton>
         </RightDiv>
-      </HeaderDiv>{" "}
+      </HeaderDiv> <Hr/>
       <JoiningModal toggle={toggle} isJoin={isJoin} />
     </>
   );
