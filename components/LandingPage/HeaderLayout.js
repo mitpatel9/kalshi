@@ -14,12 +14,19 @@ import JoiningModal from "../Models/JoiningModal";
 import { useRouter } from "next/router";
 import { Hr } from "@/StyledComponents/CommonStyled";
 import ProfileMenuView from "./ProfileMenuView";
+import DepositModal from "../Models/DepositModal";
+import Notification from "./Notification";
 
 const HeaderLayout = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [notify, setNotify] = useState(false);
+
   const [isJoin, setIsJoin] = useState(false);
   const toggle = () => setIsJoin(!isJoin);
+
+  const [isDeposit, setIsDeposit] = useState(false);
+  const toggleDeposit = () => setIsDeposit(!isDeposit);
   return (
     <>
       <HeaderDiv>
@@ -38,7 +45,7 @@ const HeaderLayout = () => {
             <span onClick={() => toggle()}>Get Started</span>
           </SButton>
           <SButton>
-            <span onClick={() => toggle()}>Deposit cash</span>
+            <span onClick={() => toggleDeposit()}>Deposit cash</span>
           </SButton>
           <HeaderMenuIcon>
             <Icon
@@ -47,7 +54,11 @@ const HeaderLayout = () => {
               color="goldenrod"
               onClick={() => router.push("/leaderboard")}
             />
-            <Icon icon="zondicons:notification" className="menuIcon" />
+            <Icon
+              icon="zondicons:notification"
+              className="menuIcon"
+              onClick={() => setNotify(!notify)}
+            />
 
             <Icon
               icon="material-symbols:menu-rounded"
@@ -59,7 +70,9 @@ const HeaderLayout = () => {
       </HeaderDiv>{" "}
       <Hr />
       <ProfileMenuView open={open} setOpen={setOpen} />
+      <Notification notify={notify} setNotify={setNotify} />
       <JoiningModal toggle={toggle} isJoin={isJoin} />
+      <DepositModal isDeposit={isDeposit} toggleDeposit={toggleDeposit} />
     </>
   );
 };

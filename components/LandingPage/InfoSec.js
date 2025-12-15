@@ -18,7 +18,7 @@ const InfoSec = () => {
             <Icon icon="mingcute:bank-line" width={28} height={28} />
           </IconInfo>
           <div>
-            <MainTitle>Legal & regulated in the US</MainTitle>
+            <MainTitle>Legal & regulated in the INDIA</MainTitle>
             <SubTitle>
               Trade on the election, Oscars, Bitcoin, and more
             </SubTitle>
@@ -49,7 +49,7 @@ const InfoSec = () => {
           </IconInfo>
           <div>
             <MainTitle>Fund your account freely</MainTitle>
-            <SubTitle>Bank transfer, debit card, crypto, or wire</SubTitle>
+            <SubTitle>Bank transfer, debit card, or wire</SubTitle>
           </div>
         </IconContainer>
       </TabSection>

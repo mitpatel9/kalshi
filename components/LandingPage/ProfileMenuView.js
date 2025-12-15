@@ -35,7 +35,7 @@ const ProfileMenuView = (props) => {
           <LeaderBoardInner>
             <ProfilemenuIcons>
               <Icon
-                icon="majesticons:plus-line"
+                icon="typcn:plus"
                 className="menuIcon"
                 width={22}
                 height={22}

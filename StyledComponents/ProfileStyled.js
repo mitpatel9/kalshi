@@ -11,6 +11,7 @@ export const ProfileLeft = styled.div`
 export const ProfileRight = styled.div`
   width: 80%;
   padding-left: 2rem;
+ 
 `;
 export const ProfileMenuContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -18,7 +19,7 @@ export const ProfileMenuContainer = styled.div`
   border-radius: 5px;
   margin-bottom: 2rem;
   padding: 0.3rem;
-  max-width: fir-content;
+  max-width: fit-content;
 `;
 export const ProfileMenuItem = styled.div`
   display: flex;
@@ -179,7 +180,7 @@ export const TransfersTextDesc = styled.div`
   color: #000;
   font-size: 14px;
   margin-top: 0.5rem;
-  
+
   .icons {
     width: 34px;
     height: 34px;
@@ -217,7 +218,6 @@ export const TransfersButton = styled.div`
   }
 `;
 
-
 //Documents
 export const DocumentsContainer = styled.div``;
 export const DocumentsHedText = styled.div`
@@ -232,4 +232,72 @@ export const DocumentsTextDesc = styled.div`
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
+`;
+
+//setting prefrence
+export const SettingsContainer = styled.div``;
+export const SettingsHeading = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 24px;
+`;
+export const SettingsHeadingSub = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
+`;
+export const SettingsPrefContainer = styled.div`
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const PrefName = styled.div`
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+`;
+export const StyledSwitch = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #30a159;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
 `;

@@ -68,7 +68,7 @@ export const HeaderMenuIcon = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left:1rem;
+  margin-left: 1rem;
   .menuIcon {
     width: 22px;
     height: 22px;
@@ -135,7 +135,7 @@ export const ProfilemenuIcons = styled.div`
 `;
 export const ProfilemenuIconsName = styled.div`
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   color: #8c8c8c;
 `;
 export const SidebarMenuItem = styled.div`
@@ -143,7 +143,33 @@ export const SidebarMenuItem = styled.div`
   font-size: 14px;
   color: #8c8c8c;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0rem;
+`;
+
+// Notifiaction on header
+export const NotificationSideBar = styled.div`
+  display: none;
+
+  &.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+`;
+
+export const NotificationInner = styled.div`
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 180px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 `;
 
 //menu item

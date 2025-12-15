@@ -91,3 +91,52 @@ export const TermsandCondition = styled.div`
     cursor: pointer;
   }
 `;
+
+// deposite modal
+export const DepositContainer = styled.div`
+  padding: 1rem;
+`;
+export const DepositHedding = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const DepositSecureContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+`;
+export const DepositIcon = styled.div``;
+export const DepositIconHed = styled.div`
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+`;
+export const DepositIconSubText = styled.div`
+  font-size: 10px;
+  font-weight: 600;
+  color: #b5b5b5;
+`;
+export const DepositLogo = styled.div`
+  font-size: 24px;
+  font-weight: 600;
+  color: #fd7979;
+`;
+export const DepositMethodContainer = styled.div`
+  border: 0.1px solid #b5b5b5;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cccccc;
+  }
+`;
+
+export const DepositMethodName = styled.div`
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+`;
