@@ -161,6 +161,8 @@ export const NotificationSideBar = styled.div`
 `;
 
 export const NotificationInner = styled.div`
+  width: 30vw;
+  height: 85vh;
   position: absolute;
   top: 60px;
   right: 20px;
@@ -171,6 +173,13 @@ export const NotificationInner = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 `;
+
+export const NotificationTitle = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+`;
+export const NotificationArea = styled.div``;
 
 //menu item
 export const MenuContainer = styled.div`

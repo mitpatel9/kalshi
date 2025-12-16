@@ -11,7 +11,6 @@ export const ProfileLeft = styled.div`
 export const ProfileRight = styled.div`
   width: 80%;
   padding-left: 2rem;
- 
 `;
 export const ProfileMenuContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -300,4 +299,34 @@ export const StyledSwitch = styled.div`
   input:checked + .slider:before {
     transform: translateX(20px);
   }
+`;
+
+// sign up process
+
+export const ComProcessContainer = styled.div``;
+
+export const ComProcessSubHedText = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 22px;
+`;
+export const ComProcesSubText = styled.div`
+ font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
+`;
+export const ComProcesInput = styled.div`
+ font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
+`;
+export const ComProcesBtn = styled.div`
+ font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
+`;
+export const ComProcessLable = styled.div`
+ font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
 `;

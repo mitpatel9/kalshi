@@ -1,6 +1,9 @@
+import { Hr } from "@/StyledComponents/CommonStyled";
 import {
+  NotificationArea,
   NotificationInner,
   NotificationSideBar,
+  NotificationTitle,
 } from "@/StyledComponents/LayoutStyled";
 import React from "react";
 
@@ -10,7 +13,11 @@ const Notification = (props) => {
       className={props.notify ? "active" : ""}
       onClick={() => props.setNotify(!props.notify)}
     >
-      <NotificationInner>Notification</NotificationInner>
+      <NotificationInner>
+        <NotificationTitle>Notifications</NotificationTitle>
+        <Hr />
+        <NotificationArea></NotificationArea>
+      </NotificationInner>
     </NotificationSideBar>
   );
 };

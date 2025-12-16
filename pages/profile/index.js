@@ -3,6 +3,7 @@ import AccountSecurity from "@/components/ProfileLayout/AccountSecurity";
 import Activity from "@/components/ProfileLayout/Activity";
 import Documents from "@/components/ProfileLayout/Documents";
 import Settings from "@/components/ProfileLayout/Settings";
+import Signup from "@/components/ProfileLayout/Signup";
 import Transfers from "@/components/ProfileLayout/Transfers";
 import { SiteLayout } from "@/StyledComponents/LayoutStyled";
 import {
@@ -17,6 +18,7 @@ import React, { useState } from "react";
 
 const profile = () => {
   const [switchTab, setSwitchTab] = useState("account");
+
   return (
     <SiteLayout>
       <HeaderLayout />
@@ -64,11 +66,12 @@ const profile = () => {
           </ProfileMenuContainer>
         </ProfileLeft>
         <ProfileRight>
-          {switchTab === "account" && <AccountSecurity />}
+          {switchTab === "account" && <AccountSecurity setSwitchTab={setSwitchTab}/>}
           {switchTab === "activity" && <Activity />}
           {switchTab === "transfers" && <Transfers />}
           {switchTab === "documents" && <Documents />}
           {switchTab === "settings" && <Settings />}
+          {switchTab === "Signup" && <Signup />}
         </ProfileRight>
       </ProfileContainer>
     </SiteLayout>
