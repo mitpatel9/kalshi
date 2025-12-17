@@ -303,30 +303,119 @@ export const StyledSwitch = styled.div`
 
 // sign up process
 
-export const ComProcessContainer = styled.div``;
+export const ComProcessContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ComProcessInner = styled.div`
+  width: 60%;
+`;
 
 export const ComProcessSubHedText = styled.div`
   font-weight: 600;
   color: #000;
   font-size: 22px;
+  margin-bottom: 1rem;
+  text-align: center;
 `;
 export const ComProcesSubText = styled.div`
- font-weight: 400;
+  font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
+  margin: 0.5rem 0rem;
+`;
+export const ComProcesBack = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 12px;
+  margin: 1rem 0rem;
+`;
+
+export const ComProcesInput = styled.div`
+  font-weight: 400;
   color: #8c8c8c;
   font-size: 12px;
 `;
-export const ComProcesInput = styled.div`
- font-weight: 400;
-  color: #8c8c8c;
-  font-size: 12px;
+export const ComProcesInputFlex = styled.div`
+  display: flex;
+  justify-content: center;
+
+  .inputDiv {
+    margin-right: 0.5rem;
+  }
+
+  .inputotpDiv {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+  }
+`;
+
+export const ComProcesInputAddress = styled.div`
+  border: 1px solid #b5b5b5;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0.5rem 0rem;
+`;
+
+export const ComProcesInputPostal = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
 `;
 export const ComProcesBtn = styled.div`
- font-weight: 400;
-  color: #8c8c8c;
+  display: flex;
+  justify-content: center;
+  background: #30a159;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid #30a159;
+  border-radius: 5px;
+  cursor: pointer;
   font-size: 12px;
+  transition: 0.25s ease;
+  margin: 1rem 0rem;
+  gap: 0.5rem;
 `;
 export const ComProcessLable = styled.div`
- font-weight: 400;
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+  margin: 0.2rem 0rem;
+`;
+export const VerifyDocContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
+export const VerifyIconsInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const VerifySubText = styled.div`
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.verifyHedding {
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+  }
+`;
+export const VerifyText = styled.div`
+  font-weight: 500;
   color: #8c8c8c;
   font-size: 12px;
 `;
+
+export const ReviewIcons = styled.div``;
