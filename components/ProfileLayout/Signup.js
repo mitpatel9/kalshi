@@ -1,3 +1,4 @@
+import { TimeLineContainer } from "@/StyledComponents/MarketsStyled";
 import {
   ComProcesBack,
   ComProcesBtn,
@@ -12,6 +13,7 @@ import {
   ComProcessSubHedText,
   ComProcesSubText,
   ReviewIcons,
+  TimeLineInner,
   VerifyDocContainer,
   VerifyIconsInner,
   VerifySubText,
@@ -20,7 +22,7 @@ import {
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import OTPInput from "react-otp-input";
-import { Input } from "reactstrap";
+import { Input, Progress } from "reactstrap";
 
 const Signup = () => {
   const [otp, setOtp] = useState("");
@@ -28,13 +30,13 @@ const Signup = () => {
     <ComProcessContainer>
       <ComProcessInner>
         <ComProcesBack>
-          <Icon
-            icon="ic:baseline-arrow-back"
-            width={16}
-            height={16}
-          />
-          {"  "}Back
+          <Icon icon="ic:baseline-arrow-back" width={16} height={16} />
+          <TimeLineContainer>
+            <Progress value={80} />
+          </TimeLineContainer>
+          Back
         </ComProcesBack>
+
         <ComProcessSubHedText>Enter Your birthday</ComProcessSubHedText>
         <ComProcesInputFlex>
           <Input

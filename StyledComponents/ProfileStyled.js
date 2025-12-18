@@ -302,7 +302,6 @@ export const StyledSwitch = styled.div`
 `;
 
 // sign up process
-
 export const ComProcessContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -312,6 +311,22 @@ export const ComProcessContainer = styled.div`
 export const ComProcessInner = styled.div`
   width: 60%;
 `;
+
+export const ComProcesBack = styled.div`
+  display: flex;
+  font-weight: 600;
+  color: #000;
+  font-size: 12px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+`;
+export const TimeLineContainer = styled.div`
+  display: unset;
+   width: 100%;
+`;
+export const TimeLineInner = styled.div``;
 
 export const ComProcessSubHedText = styled.div`
   font-weight: 600;
@@ -325,12 +340,6 @@ export const ComProcesSubText = styled.div`
   color: #8c8c8c;
   font-size: 12px;
   margin: 0.5rem 0rem;
-`;
-export const ComProcesBack = styled.div`
-  font-weight: 600;
-  color: #000;
-  font-size: 12px;
-  margin: 1rem 0rem;
 `;
 
 export const ComProcesInput = styled.div`
