@@ -729,7 +729,7 @@ export const IdeaCommentContainer = styled.div`
 export const IdeaSubComment = styled.div`
   display: flex;
   gap: 0.5rem;
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 `;
 export const IdeaImage = styled.div`
   .image {
@@ -765,3 +765,116 @@ export const IdeaIcons = styled.div`
   font-size: 14px;
   cursor: pointer;
 `;
+
+//out come section
+export const OutcomeContainer = styled.div`
+  margin: 1rem 0rem;
+`;
+export const OutcomeHedTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+`;
+export const OutcomeHedTitleLeft = styled.div`
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+  width: 40%;
+`;
+export const OutcomeHedTitleCenter = styled.div`
+  width: 20%;
+  display: flex;
+    align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+
+  .icons {
+    cursor: pointer;
+  }
+`;
+export const OutcomeHedTitleRight = styled.div`
+  width: 40%;
+`;
+export const OutcomeMarketListing = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-top: 1px solid #e6e8ea;
+
+  &:hover {
+    background-color: #e6e8ea;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+  }
+`;
+export const OutcomeMarketListingLeft = styled.div`
+  cursor: pointer;
+  width: 40%;
+`;
+export const MarketOutcomeHedText = styled.div`
+  font-weight: 500;
+  color: #000;
+  font-size: 16px;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+export const MarketOutcomeHedTextSub = styled.div`
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+`;
+export const OutcomeMarketListingCenter = styled.div`
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #000;
+  font-size: 24px;
+`;
+
+export const OutcomePrecentage = styled.div`
+  font-weight: 500;
+  color: #000;
+  font-size: 12px;
+  margin-left: 0.6rem;
+
+  .red {
+    color: #e33939;
+  }
+
+  .green {
+    color: #30a159;
+  }
+`;
+export const OutcomeMarketListingRight = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+`;
+export const OutcomeMarketYesBtn = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #30a159;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 36px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+`;
+export const OutcomeMarketNoBtn = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #e33939;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 36px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+`;
+
+export const OutcomeMarketLiquidity =styled.div``;
