@@ -66,12 +66,14 @@ const profile = () => {
           </ProfileMenuContainer>
         </ProfileLeft>
         <ProfileRight>
-          {switchTab === "account" && <AccountSecurity setSwitchTab={setSwitchTab}/>}
+          {switchTab === "account" && (
+            <AccountSecurity setSwitchTab={setSwitchTab} />
+          )}
           {switchTab === "activity" && <Activity />}
           {switchTab === "transfers" && <Transfers />}
           {switchTab === "documents" && <Documents />}
           {switchTab === "settings" && <Settings />}
-          {switchTab === "Signup" && <Signup />}
+          {switchTab === "Signup" && <Signup setSwitchTab={setSwitchTab} />}
         </ProfileRight>
       </ProfileContainer>
     </SiteLayout>

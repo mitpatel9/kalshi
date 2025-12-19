@@ -316,17 +316,17 @@ export const ComProcesBack = styled.div`
   display: flex;
   font-weight: 600;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  cursor:pointer;
 `;
-export const TimeLineContainer = styled.div`
-  display: unset;
-   width: 100%;
+export const TimeLineContainerSignUp = styled.div`
+  width: 100%;
 `;
-export const TimeLineInner = styled.div``;
+
 
 export const ComProcessSubHedText = styled.div`
   font-weight: 600;
