@@ -321,24 +321,23 @@ export const ComProcesBack = styled.div`
   margin-bottom: 2rem;
   align-items: center;
   gap: 1rem;
-  cursor:pointer;
+  cursor: pointer;
 `;
 export const TimeLineContainerSignUp = styled.div`
   width: 100%;
 `;
 
-
 export const ComProcessSubHedText = styled.div`
   font-weight: 600;
   color: #000;
-  font-size: 22px;
+  font-size: 28px;
   margin-bottom: 1rem;
   text-align: center;
 `;
 export const ComProcesSubText = styled.div`
   font-weight: 400;
   color: #8c8c8c;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0.5rem 0rem;
 `;
 
@@ -363,6 +362,7 @@ export const ComProcesInputFlex = styled.div`
 `;
 
 export const ComProcesInputAddress = styled.div`
+  width: 100%;
   border: 1px solid #b5b5b5;
   padding: 0.5rem;
   border-radius: 5px;
@@ -398,6 +398,7 @@ export const ComProcessLable = styled.div`
 export const VerifyDocContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  margin: 2rem 0rem;
 `;
 
 export const VerifyIconsInner = styled.div`

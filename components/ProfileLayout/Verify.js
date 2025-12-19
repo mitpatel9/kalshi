@@ -16,11 +16,11 @@ const Verify = (props) => {
         </VerifySubText>
         <VerifyDocContainer>
           <VerifyIconsInner>
-            <Icon icon="teenyicons:id-outline" width={55} height={55} />
+            <Icon icon="teenyicons:id-outline" width={55} height={80} />
             <VerifyText>Government issued ID</VerifyText>
           </VerifyIconsInner>
           <VerifyIconsInner>
-            <Icon icon="mynaui:mobile" width={55} height={55} />
+            <Icon icon="mynaui:mobile" width={55} height={80} />
             <VerifyText>Smartphone</VerifyText>
           </VerifyIconsInner>
         </VerifyDocContainer>
