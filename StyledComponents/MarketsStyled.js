@@ -71,8 +71,10 @@ export const MarketEndDate = styled.div`
 //oder buy sell section
 export const OrderContaier = styled.div`
   padding: 1rem;
-  border: 1px solid #fd7979;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 `;
 export const OrderTopHedding = styled.div`
   display: flex;
@@ -249,9 +251,11 @@ export const AlsoBuyContainer = styled.div`
   overflow-y: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  height: 500px;
-  border: 1px solid #fd7979;
+  height: 470px;
+  border: none;
   padding: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 `;
 export const AlsoBuyTopHeading = styled.div`
   font-weight: 600;
@@ -767,6 +771,9 @@ export const IdeaIcons = styled.div`
 `;
 
 //out come section
+export const HrGraph =styled.div`
+ border-bottom: 1px solid #dbdbdb;`;
+
 export const OutcomeContainer = styled.div`
   margin: 1rem 0rem;
 `;
@@ -784,9 +791,9 @@ export const OutcomeHedTitleLeft = styled.div`
 export const OutcomeHedTitleCenter = styled.div`
   width: 20%;
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
-  gap:0.5rem;
+  gap: 0.5rem;
   font-weight: 500;
   color: #8c8c8c;
   font-size: 12px;
@@ -801,7 +808,7 @@ export const OutcomeHedTitleRight = styled.div`
 export const OutcomeMarketListing = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem 0rem;
+  padding: 1rem 0.2rem;
   border-top: 1px solid #e6e8ea;
 
   &:hover {
@@ -877,4 +884,98 @@ export const OutcomeMarketNoBtn = styled.div`
   margin-right: 0.5rem;
 `;
 
-export const OutcomeMarketLiquidity =styled.div``;
+export const OutcomeMarketLiquidity = styled.div`
+  margin-top: 0.5rem;
+`;
+export const LiquidityChartMenu = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+export const LiquidityChartMenuItem = styled.div`
+  font-weight: 600;
+  color: #8c8c8c;
+  font-size: 14px;
+
+  &.active {
+    color: #000;
+  }
+`;
+export const GraphHedding = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+  padding-bottom: 0.5rem;
+`;
+export const LiquidityChart = styled.div`
+  width: 100%;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+export const GraphDataChartTop = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+  padding: 0.5rem 0rem;
+  margin-bottom: 0.1rem;
+  background-color:#fceded;
+`;
+export const GraphDataChartCenter = styled.div`
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+  text-align: center;
+  padding: 0.5rem 0rem;
+
+  .yes {
+    font-size: 14px;
+    color: #30a159;
+  }
+`;
+export const GraphDataChartBottom = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 12px;
+ padding: 0.5rem 0rem;
+   margin-bottom: 0.1rem;
+  background-color:#e4f7ea;
+`;
+export const GraphTitleYes = styled.div`
+  width: 40%;
+`;
+export const GraphTitlePrice = styled.div`
+  width: 20%;
+  text-align: center;
+
+  &.yes {
+    color: #30a159;
+  }
+  &.no {
+    color: #e33939;
+  }
+`;
+export const GraphTitleShare = styled.div`
+  width: 20%;
+  text-align: center;
+`;
+export const GraphTitleTotal = styled.div`
+  width: 20%;
+  text-align: center;
+`;
+export const LiquidityFooter = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;

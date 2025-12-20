@@ -27,8 +27,8 @@ const MarketData = () => {
           <MarketHeader />
           <MarketChart />
           <MarketOutCome />
-          <ImpotantNotice/>
           <MarketContext />
+          <ImpotantNotice/>
           <RulesSummary />
           <TimelineAndPayout />
           <TradingProhibitions />
