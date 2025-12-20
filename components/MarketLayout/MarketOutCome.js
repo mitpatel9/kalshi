@@ -1,4 +1,4 @@
-import { Hr } from "@/StyledComponents/CommonStyled";
+import { CommonDiv, Hr } from "@/StyledComponents/CommonStyled";
 import { NBtn, YBtn } from "@/StyledComponents/LayoutStyled";
 import {
   GraphDataChart,
@@ -23,6 +23,7 @@ import {
   OutcomeHedTitleCenter,
   OutcomeHedTitleLeft,
   OutcomeHedTitleRight,
+  OutcomeMarketIconReward,
   OutcomeMarketLiquidity,
   OutcomeMarketListing,
   OutcomeMarketListingCenter,
@@ -31,14 +32,28 @@ import {
   OutcomeMarketNoBtn,
   OutcomeMarketYesBtn,
   OutcomePrecentage,
+  RewardBoxContainer,
+  RewardHedText,
+  RewardHedTextsub,
+  RewardIHed,
+  RewardInner,
+  RewardLernMore,
+  RewardtimeHed,
+  RewardtimeSub,
+  RewardTiming,
 } from "@/StyledComponents/MarketsStyled";
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import YesGraph from "./graph/YesGraph";
 import NoGraph from "./graph/NoGraph";
 import SingleGraph from "./graph/SingleGraph";
+import { Popover } from "reactstrap";
+import { useRouter } from "next/router";
 
 const MarketOutCome = () => {
+  const router =useRouter();
+  const [rewardPop, setRewardPop] = useState(false);
+  const toggle = () => setRewardPop(!rewardPop);
   const [isDrop, setIsDrop] = useState(false);
   const [isTab, setIsTab] = useState("yesgraph");
 
@@ -71,6 +86,15 @@ const MarketOutCome = () => {
           </OutcomePrecentage>
         </OutcomeMarketListingCenter>
         <OutcomeMarketListingRight>
+          <OutcomeMarketIconReward id="reward">
+            <Icon
+              icon="lets-icons:dimond-alt"
+              width={18}
+              height={18}
+              color="#265cff"
+              onClick={() => toggle()}
+            />
+          </OutcomeMarketIconReward>{" "}
           <OutcomeMarketYesBtn>Yes 21$</OutcomeMarketYesBtn>
           <OutcomeMarketNoBtn>No 80%</OutcomeMarketNoBtn>
         </OutcomeMarketListingRight>
@@ -143,6 +167,49 @@ const MarketOutCome = () => {
           <OutcomeMarketNoBtn>No 80%</OutcomeMarketNoBtn>
         </OutcomeMarketListingRight>
       </OutcomeMarketListing>
+      {/* reward box */}
+      <Popover
+        placement="bottom"
+        isOpen={rewardPop}
+        target="reward"
+        toggle={toggle}
+      >
+        <RewardBoxContainer>
+          <RewardIHed>
+            <Icon
+              icon="eos-icons:hourglass"
+              width={14}
+              height={14}
+              color="#265cff"
+              className="ml-2"
+            />
+            Liquidity rewards pool
+            <Icon
+              icon="icons8:right-round"
+              width={18}
+              height={18}
+              color="#265cff"
+              onClick={()=> router.push("/rewards")}
+            />
+          </RewardIHed>
+          <RewardHedText>$20</RewardHedText>
+          <RewardHedTextsub>Discount factor: 0.5</RewardHedTextsub>
+          <RewardTiming>
+            <CommonDiv>
+              <RewardtimeHed>Dec 20, 2025</RewardtimeHed>
+              <RewardtimeSub>9:32 PM GMT+5:30</RewardtimeSub>
+            </CommonDiv>
+            <CommonDiv>
+              <RewardtimeHed>Dec 21, 2025</RewardtimeHed>
+              <RewardtimeSub>5:29 AM GMT+5:30</RewardtimeSub>
+            </CommonDiv>
+          </RewardTiming>
+          <RewardLernMore>
+            Earn rewards when your bids rank in the top 300 shares.{" "}
+            <span>Learn more</span>
+          </RewardLernMore>
+        </RewardBoxContainer>
+      </Popover>
     </OutcomeContainer>
   );
 };

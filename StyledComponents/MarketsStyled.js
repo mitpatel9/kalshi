@@ -243,6 +243,19 @@ export const OderTradeButton = styled.div`
   color: #fff;
 `;
 
+export const TermsandConditionOrderBook = styled.div`
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-align: center;
+  span {
+    font-weight: 600;
+    color: #fd7979;
+    cursor: pointer;
+  }
+`;
+
 //also buying peopel section
 export const AlsoBuyContainer = styled.div`
   margin: 0.5rem 0rem;
@@ -769,7 +782,56 @@ export const IdeaIcons = styled.div`
   font-size: 14px;
   cursor: pointer;
 `;
-
+//reward box
+export const RewardBoxContainer = styled.div`
+  padding: 1rem;
+`;
+export const RewardIHed = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #265cff;
+`;
+export const RewardHedText = styled.div`
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+`;
+export const RewardHedTextsub = styled.div`
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+`;
+export const RewardTiming = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+`;
+export const RewardtimeHed = styled.div`
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+`;
+export const RewardtimeSub = styled.div`
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 500;
+`;
+export const RewardLernMore = styled.div`
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  span {
+    cursor: pointer;
+  }
+`;
 //out come section
 export const HrGraph = styled.div`
   border-bottom: 1px solid #dbdbdb;
@@ -863,6 +925,11 @@ export const OutcomeMarketListingRight = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 40%;
+  align-items: center;
+`;
+export const OutcomeMarketIconReward = styled.div`
+  cursor: pointer;
+  margin-right: 0.5rem;
 `;
 export const OutcomeMarketYesBtn = styled.div`
   font-weight: 600;

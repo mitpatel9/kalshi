@@ -15,7 +15,9 @@ import {
   MarketLeftLayout,
   MarketRightLayout,
   MarketsLayout,
+  TermsandConditionOrderBook,
 } from "@/StyledComponents/MarketsStyled";
+import { TermsandCondition } from "@/StyledComponents/ModalStyled";
 import React from "react";
 
 const MarketData = () => {
@@ -28,7 +30,7 @@ const MarketData = () => {
           <MarketChart />
           <MarketOutCome />
           <MarketContext />
-          <ImpotantNotice/>
+          <ImpotantNotice />
           <RulesSummary />
           <TimelineAndPayout />
           <TradingProhibitions />
@@ -36,6 +38,9 @@ const MarketData = () => {
         </MarketLeftLayout>
         <MarketRightLayout>
           <OrderBuySell />
+          <TermsandConditionOrderBook>
+            By trading, you agree to the <span>Terms of Use</span>.
+          </TermsandConditionOrderBook>
           <AlsoBuy />
         </MarketRightLayout>
       </MarketsLayout>

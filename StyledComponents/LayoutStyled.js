@@ -166,7 +166,7 @@ export const NotificationInner = styled.div`
   position: absolute;
   top: 60px;
   right: 20px;
-  background: #fff;
+  background-color: #fff;
   border-radius: 8px;
   padding: 16px;
   min-width: 180px;
@@ -425,4 +425,98 @@ export const FooterCopyWrite = styled.div`
     width: 22px;
     height: 22px;
   }
+`;
+
+//Rewards section
+export const IncentivesContainer = styled.div`
+  display: flex;
+  margin-top: 2rem;
+`;
+export const IncentivesLeft = styled.div`
+  width: 20%;
+`;
+export const IncentivesRight = styled.div`
+  width: 80%;
+`;
+export const IncentivesMenuContainer = styled.div``;
+export const IncentivesMenuItem = styled.div`
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+
+  &.active {
+    color: #e33939;
+  }
+`;
+
+export const RewardsContainer = styled.div``;
+export const RewardHedding = styled.div`
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+`;
+export const RewardsDropboxContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  margin:1rem 0rem;
+`;
+export const RewardsDropbox = styled.div`
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 5px 16px;
+`;
+export const RewardDataListingHed = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #b5b5b5;
+`;
+export const RewardMarket = styled.div`
+  width: 40%;
+`;
+export const RewardStart = styled.div`
+  width: 20%;
+  text-align: center;
+`;
+export const RewardEnd = styled.div`
+  width: 20%;
+  text-align: center;
+`;
+export const RewardProgram = styled.div`
+  width: 10%;
+  text-align: center;
+`;
+export const RewardIncentive = styled.div`
+  width: 10%;
+  text-align: center;
+`;
+export const RewardDataListing = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const RewardListingMarket = styled.div`
+  width: 40%;
+`;
+export const RewardListingStart = styled.div`
+  width: 20%;
+  text-align: center;
+`;
+export const RewardListingEnd = styled.div`
+  width: 20%;
+  text-align: center;
+`;
+export const RewardListingProgram = styled.div`
+  width: 10%;
+  text-align: center;
+`;
+export const RewardListingIncentive = styled.div`
+  width: 10%;
+  text-align: center;
 `;
