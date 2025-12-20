@@ -34,10 +34,14 @@ import {
 } from "@/StyledComponents/MarketsStyled";
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
+import YesGraph from "./graph/YesGraph";
+import NoGraph from "./graph/NoGraph";
+import SingleGraph from "./graph/SingleGraph";
 
 const MarketOutCome = () => {
-  const [isTab, setIsTab] = useState(false);
-  const loopData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  const [isDrop, setIsDrop] = useState(false);
+  const [isTab, setIsTab] = useState("yesgraph");
+
   return (
     <OutcomeContainer>
       <OutcomeHedTitle>
@@ -50,7 +54,7 @@ const MarketOutCome = () => {
       </OutcomeHedTitle>
 
       <OutcomeMarketListing>
-        <OutcomeMarketListingLeft onClick={() => setIsTab(!isTab)}>
+        <OutcomeMarketListingLeft onClick={() => setIsDrop(!isDrop)}>
           <MarketOutcomeHedText>Before July</MarketOutcomeHedText>
           <MarketOutcomeHedTextSub>$11,385,227 Vol.</MarketOutcomeHedTextSub>
         </OutcomeMarketListingLeft>
@@ -71,15 +75,29 @@ const MarketOutCome = () => {
           <OutcomeMarketNoBtn>No 80%</OutcomeMarketNoBtn>
         </OutcomeMarketListingRight>
       </OutcomeMarketListing>
-      {isTab && (
+
+      {isDrop && (
         <OutcomeMarketLiquidity>
           {/* LiquidityChart menu */}
           <LiquidityChartMenu>
-            <LiquidityChartMenuItem className="active">
+            <LiquidityChartMenuItem
+              className={isTab == "yesgraph" ? "active" : ""}
+              onClick={() => setIsTab("yesgraph")}
+            >
               Yes Orders
             </LiquidityChartMenuItem>
-            <LiquidityChartMenuItem>No Orders</LiquidityChartMenuItem>
-            <LiquidityChartMenuItem>Graph</LiquidityChartMenuItem>
+            <LiquidityChartMenuItem
+              className={isTab == "nograph" ? "active" : ""}
+              onClick={() => setIsTab("nograph")}
+            >
+              No Orders
+            </LiquidityChartMenuItem>
+            <LiquidityChartMenuItem
+              className={isTab == "singlegraph" ? "active" : ""}
+              onClick={() => setIsTab("singlegraph")}
+            >
+              Graph
+            </LiquidityChartMenuItem>
           </LiquidityChartMenu>
           <Hr />
           {/* Liquidity  graph */}
@@ -90,34 +108,9 @@ const MarketOutCome = () => {
             <GraphTitleTotal>Total</GraphTitleTotal>
           </GraphHedding>
           <HrGraph />
-
-          {/* graph data section */}
-          <LiquidityChart>
-            {loopData.length > 0 &&
-              loopData.map((item) => (
-                <GraphDataChartTop>
-                  <GraphTitleYes></GraphTitleYes>
-                  <GraphTitlePrice className="no">48¢</GraphTitlePrice>
-                  <GraphTitleShare>563</GraphTitleShare>
-                  <GraphTitleTotal>$45638</GraphTitleTotal>
-                  {/* <span className="nobids">No bids</span> */}
-                </GraphDataChartTop>
-              ))}
-            <HrGraph />
-            <GraphDataChartCenter>
-              <span className="yes">Trade Yes</span> Last 74¢
-            </GraphDataChartCenter>{" "}
-            <HrGraph />
-            {loopData.length > 0 &&
-              loopData.map((item) => (
-                <GraphDataChartBottom>
-                  <GraphTitleYes></GraphTitleYes>
-                  <GraphTitlePrice className="yes">48¢</GraphTitlePrice>
-                  <GraphTitleShare>563</GraphTitleShare>
-                  <GraphTitleTotal>$45638</GraphTitleTotal>
-                </GraphDataChartBottom>
-              ))}
-          </LiquidityChart>
+          {isTab === "yesgraph" && <YesGraph />}
+          {isTab === "nograph" && <NoGraph />}
+          {isTab === "singlegraph" && <SingleGraph />}
           <HrGraph />
           {/* Liquidity  footer icon */}
           <LiquidityFooter>

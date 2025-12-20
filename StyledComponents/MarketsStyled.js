@@ -771,8 +771,9 @@ export const IdeaIcons = styled.div`
 `;
 
 //out come section
-export const HrGraph =styled.div`
- border-bottom: 1px solid #dbdbdb;`;
+export const HrGraph = styled.div`
+  border-bottom: 1px solid #dbdbdb;
+`;
 
 export const OutcomeContainer = styled.div`
   margin: 1rem 0rem;
@@ -928,7 +929,31 @@ export const GraphDataChartTop = styled.div`
   font-size: 12px;
   padding: 0.5rem 0rem;
   margin-bottom: 0.1rem;
-  background-color:#fceded;
+  background-color: #fceded;
+`;
+export const GraphNoContainer = styled.div`
+  position: relative;
+`;
+
+export const GrapTopTooltip = styled.div`
+  position: absolute;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-size: 8px;
+  font-weight: 600;
+  margin: 0.5rem;
+
+  &.yes {
+    background-color: #30a159;
+    top: 0px;
+  }
+  &.no {
+    background-color: #e33939;
+    bottom: 0px;
+  }
 `;
 export const GraphDataChartCenter = styled.div`
   font-weight: 500;
@@ -941,6 +966,11 @@ export const GraphDataChartCenter = styled.div`
     font-size: 14px;
     color: #30a159;
   }
+
+  .no {
+    font-size: 14px;
+    color: #e33939;
+  }
 `;
 export const GraphDataChartBottom = styled.div`
   display: flex;
@@ -948,9 +978,9 @@ export const GraphDataChartBottom = styled.div`
   font-weight: 500;
   color: #8c8c8c;
   font-size: 12px;
- padding: 0.5rem 0rem;
-   margin-bottom: 0.1rem;
-  background-color:#e4f7ea;
+  padding: 0.5rem 0rem;
+  margin-bottom: 0.1rem;
+  background-color: #e4f7ea;
 `;
 export const GraphTitleYes = styled.div`
   width: 40%;
