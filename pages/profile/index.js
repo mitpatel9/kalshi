@@ -2,6 +2,7 @@ import HeaderLayout from "@/components/LandingPage/HeaderLayout";
 import AccountSecurity from "@/components/ProfileLayout/AccountSecurity";
 import Activity from "@/components/ProfileLayout/Activity";
 import Documents from "@/components/ProfileLayout/Documents";
+import Profile from "@/components/ProfileLayout/Profile";
 import Settings from "@/components/ProfileLayout/Settings";
 import Signup from "@/components/ProfileLayout/Signup";
 import Transfers from "@/components/ProfileLayout/Transfers";
@@ -17,7 +18,7 @@ import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 
 const profile = () => {
-  const [switchTab, setSwitchTab] = useState("account");
+  const [switchTab, setSwitchTab] = useState("profile");
 
   return (
     <SiteLayout>
@@ -25,6 +26,13 @@ const profile = () => {
       <ProfileContainer>
         <ProfileLeft>
           <ProfileMenuContainer>
+            <ProfileMenuItem
+              className={switchTab === "profile" ? "active" : ""}
+              onClick={() => setSwitchTab("profile")}
+            >
+              <Icon icon="ic:round-security" className="icons" />
+              Profile
+            </ProfileMenuItem>
             <ProfileMenuItem
               className={switchTab === "account" ? "active" : ""}
               onClick={() => setSwitchTab("account")}
@@ -66,6 +74,7 @@ const profile = () => {
           </ProfileMenuContainer>
         </ProfileLeft>
         <ProfileRight>
+          {switchTab === "profile" && <Profile />}
           {switchTab === "account" && (
             <AccountSecurity setSwitchTab={setSwitchTab} />
           )}

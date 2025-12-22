@@ -1,3 +1,9 @@
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+} from "reactstrap";
 import styled from "styled-components";
 
 export const MarketSection = styled.div``;
@@ -460,8 +466,8 @@ export const RewardHedding = styled.div`
 export const RewardsDropboxContainer = styled.div`
   display: flex;
   align-items: center;
-  gap:1rem;
-  margin:1rem 0rem;
+  gap: 1rem;
+  margin: 1rem 0rem;
 `;
 export const RewardsDropbox = styled.div`
   font-weight: 500;
@@ -471,6 +477,18 @@ export const RewardsDropbox = styled.div`
   border-radius: 5px;
   padding: 5px 16px;
 `;
+
+export const ToggleDropbox = styled(DropdownToggle)`
+  all: unset;
+
+  &:hover {
+    color: #000;
+    background-color: unset;
+  }
+`;
+export const MenuDropbox = styled(DropdownMenu)``;
+export const ItemDropbox = styled(DropdownItem)``;
+
 export const RewardDataListingHed = styled.div`
   display: flex;
   align-items: center;
@@ -479,14 +497,14 @@ export const RewardDataListingHed = styled.div`
   color: #b5b5b5;
 `;
 export const RewardMarket = styled.div`
-  width: 40%;
+  width: 50%;
 `;
 export const RewardStart = styled.div`
-  width: 20%;
+  width: 15%;
   text-align: center;
 `;
 export const RewardEnd = styled.div`
-  width: 20%;
+  width: 15%;
   text-align: center;
 `;
 export const RewardProgram = styled.div`
@@ -500,23 +518,65 @@ export const RewardIncentive = styled.div`
 export const RewardDataListing = styled.div`
   display: flex;
   align-items: center;
+  margin: 1rem 0rem;
 `;
 export const RewardListingMarket = styled.div`
-  width: 40%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+export const RewardListingImg = styled.div`
+  .image {
+    max-height: 38px;
+    max-width: 38px;
+    border-radius: 10px;
+  }
+`;
+export const ListingContainer = styled.div``;
+export const ListingContainerHed = styled.div`
+  font-weight: 500;
+  font-size: 13px;
+  color: #000;
+`;
+export const ListingContainerSubText = styled.div`
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
 `;
 export const RewardListingStart = styled.div`
-  width: 20%;
+  width: 15%;
   text-align: center;
 `;
+export const StartHedding = styled.div`
+  font-weight: 600;
+  font-size: 13px;
+  color: #000;
+`;
+export const StartHeddingSub = styled.div`
+  font-weight: 500;
+  font-size: 13px;
+  color: #b5b5b5;
+`;
 export const RewardListingEnd = styled.div`
-  width: 20%;
+  width: 15%;
   text-align: center;
 `;
 export const RewardListingProgram = styled.div`
   width: 10%;
   text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: #e33939;
 `;
 export const RewardListingIncentive = styled.div`
+  display: flex;
+  align-items: center;
   width: 10%;
-  text-align: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: #000;
+  gap: 5px;
+  cursor: pointer;
 `;
