@@ -1,3 +1,4 @@
+import HeaderLayout from "@/components/LandingPage/HeaderLayout";
 import { CommonDiv } from "@/StyledComponents/CommonStyled";
 import {
   DepositContainer,
@@ -7,17 +8,17 @@ import {
   DepositIconSubText,
   DepositLogo,
   DepositMethodContainer,
-  DepositMethodIcon,
   DepositMethodName,
   DepositSecureContainer,
-} from "@/StyledComponents/ModalStyled";
+  SiteLayout,
+} from "@/StyledComponents/LayoutStyled";
 import { Icon } from "@iconify/react";
 import React from "react";
-import { Modal } from "reactstrap";
 
-const DepositModal = (props) => {
+const payment = () => {
   return (
-    <Modal isOpen={props.isDeposit} toggle={props.toggleDeposit} size="xl">
+    <SiteLayout>
+      <HeaderLayout />
       <DepositContainer>
         <DepositHedding>
           <DepositSecureContainer>
@@ -42,8 +43,8 @@ const DepositModal = (props) => {
           <DepositMethodName>Debit card</DepositMethodName>
         </DepositMethodContainer>
       </DepositContainer>
-    </Modal>
+    </SiteLayout>
   );
 };
 
-export default DepositModal;
+export default payment;

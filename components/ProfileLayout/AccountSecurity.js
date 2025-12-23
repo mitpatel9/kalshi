@@ -12,10 +12,14 @@ import {
   ComplateSetupData,
 } from "@/StyledComponents/ProfileStyled";
 import { Icon } from "@iconify/react";
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "reactstrap";
+import DeleteAccount from "../Models/DeleteAccount";
 
 const AccountSecurity = (props) => {
+  const [isDelete, setIsDelete] = useState(false);
+  const toggleDelete = () => setIsDelete(!isDelete);
+
   return (
     <AccountContainer>
       <AccountHedTitle>Account & security</AccountHedTitle>
@@ -30,7 +34,7 @@ const AccountSecurity = (props) => {
           <AccountDataSub>patelmit2014@gmail.com</AccountDataSub>
         </AccountData>
         <Hr />
-        <AccountDeactive>
+        <AccountDeactive onClick={() => toggleDelete()}>
           <Icon icon="basil:user-block-solid" className="icons" />
           Deactivate your account
         </AccountDeactive>
@@ -56,6 +60,7 @@ const AccountSecurity = (props) => {
         Email only
       </AuthRadioButton>{" "}
       <Hr />
+      <DeleteAccount isDelete={isDelete} toggleDelete={toggleDelete} />
     </AccountContainer>
   );
 };

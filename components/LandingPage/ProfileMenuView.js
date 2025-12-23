@@ -32,7 +32,7 @@ const ProfileMenuView = (props) => {
             </ProfilemenuIcons>
             <ProfilemenuIconsName>Leaderboard</ProfilemenuIconsName>
           </LeaderBoardInner>
-          <LeaderBoardInner>
+          <LeaderBoardInner onClick={() => router.push("/payment")}>
             <ProfilemenuIcons>
               <Icon
                 icon="typcn:plus"

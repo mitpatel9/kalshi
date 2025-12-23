@@ -10,11 +10,9 @@ import {
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import { Input } from "reactstrap";
-import JoiningModal from "../Models/JoiningModal";
 import { useRouter } from "next/router";
 import { Hr } from "@/StyledComponents/CommonStyled";
 import ProfileMenuView from "./ProfileMenuView";
-import DepositModal from "../Models/DepositModal";
 import Notification from "./Notification";
 
 const HeaderLayout = () => {
@@ -22,11 +20,6 @@ const HeaderLayout = () => {
   const [open, setOpen] = useState(false);
   const [notify, setNotify] = useState(false);
 
-  const [isJoin, setIsJoin] = useState(false);
-  const toggle = () => setIsJoin(!isJoin);
-
-  const [isDeposit, setIsDeposit] = useState(false);
-  const toggleDeposit = () => setIsDeposit(!isDeposit);
   return (
     <>
       <HeaderDiv>
@@ -41,11 +34,11 @@ const HeaderLayout = () => {
               placeholder="Search markets or profiles..."
             />
           </SearchBar>
-          <SButton>
-            <span onClick={() => toggle()}>Get Started</span>
+          <SButton onClick={() => router.push("/auth")}>
+            <span>Get Started</span>
           </SButton>
-          <SButton>
-            <span onClick={() => toggleDeposit()}>Deposit cash</span>
+          <SButton onClick={() => router.push("/payment")}>
+            <span>Deposit cash</span>
           </SButton>
           <HeaderMenuIcon>
             <Icon
@@ -71,8 +64,6 @@ const HeaderLayout = () => {
       <Hr />
       <ProfileMenuView open={open} setOpen={setOpen} />
       <Notification notify={notify} setNotify={setNotify} />
-      <JoiningModal toggle={toggle} isJoin={isJoin} />
-      <DepositModal isDeposit={isDeposit} toggleDeposit={toggleDeposit} />
     </>
   );
 };

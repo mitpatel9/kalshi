@@ -1,4 +1,6 @@
+import HeaderLayout from "@/components/LandingPage/HeaderLayout";
 import { ErrorMessage } from "@/StyledComponents/CommonStyled";
+import { SiteLayout } from "@/StyledComponents/LayoutStyled";
 import {
   JoinContainer,
   JoinningButton,
@@ -14,14 +16,16 @@ import {
   WelcomeContainer,
   WelcomeSubText,
   WelcomeText,
-} from "@/StyledComponents/ModalStyled";
+} from "@/StyledComponents/LayoutStyled";
+import { BorderRight } from "@/StyledComponents/ProfileStyled";
 import React, { useState } from "react";
-import { FormGroup, Input, Label, Modal, ModalBody } from "reactstrap";
+import { FormGroup, Input, Label } from "reactstrap";
 
-const JoiningModal = (props) => {
+const auth = () => {
   const [switchTab, setSwitchTab] = useState("login");
   return (
-    <Modal isOpen={props.isJoin} toggle={props.toggle} size="xl">
+    <SiteLayout>
+      <HeaderLayout />
       <JoinningContainer>
         {/* left section */}
         <LeftJoining>
@@ -118,8 +122,8 @@ const JoiningModal = (props) => {
           </JoinContainer>
         </RightJoining>
       </JoinningContainer>
-    </Modal>
+    </SiteLayout>
   );
 };
 
-export default JoiningModal;
+export default auth;
