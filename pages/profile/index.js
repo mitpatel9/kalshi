@@ -30,14 +30,14 @@ const profile = () => {
               className={switchTab === "profile" ? "active" : ""}
               onClick={() => setSwitchTab("profile")}
             >
-              <Icon icon="ic:round-security" className="icons" />
+              <Icon icon="gg:profile" className="icons" />
               Profile
             </ProfileMenuItem>
             <ProfileMenuItem
               className={switchTab === "account" ? "active" : ""}
               onClick={() => setSwitchTab("account")}
             >
-              <Icon icon="gg:profile" className="icons" />
+              <Icon icon="ic:baseline-security" className="icons" />
               Account & security
             </ProfileMenuItem>
             <ProfileMenuItem

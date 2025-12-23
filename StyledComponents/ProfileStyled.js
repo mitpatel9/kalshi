@@ -40,6 +40,137 @@ export const ProfileMenuItem = styled.div`
     background-color: #ededed;
   }
 `;
+//Profile
+export const ProfilesContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+export const ProfilesLeft = styled.div`
+  width: 50%;
+  height: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+export const ProfileHed = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const ProfileImg = styled.div`
+  display: flex;
+  .image {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+`;
+export const ProfileAccount = styled.div``;
+export const ProfileName = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 18px;
+`;
+export const ProfileJOiningDate = styled.div`
+  font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
+`;
+export const ProfileSecretKey = styled.div`
+  cursor: pointer;
+`;
+export const ProfileLeftBottom = styled.div`
+  display: flex;
+      justify-content: space-around;
+`;
+export const YourPosition = styled.div`
+  text-align: center;
+`;
+
+export const BorderRight = styled.div`
+  border-right: 1px solid #8c8c8c;
+`;
+export const YourTitle = styled.div`
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 16px;
+`;
+export const YourAmount = styled.div`
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+`;
+export const YourBiggestWin = styled.div`
+  text-align: center;
+`;
+export const YourPredictions = styled.div`
+  text-align: center;
+`;
+export const ProfilesRight = styled.div`
+  width: 50%;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+`;
+export const ProfilesRightHed = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const RightProfLoss = styled.div`
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: 14px;
+  .red {
+    color: #e33939;
+  }
+
+  .green {
+    color: #30a159;
+  }
+`;
+export const RightTimeLine = styled.div`
+  display: flex;
+`;
+export const TimelineItem = styled.div`
+  font-weight: 600;
+  color: #8c8c8c;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 8px;
+
+  &.active {
+    color: #fff;
+    padding: 5px 8px;
+    border: 1px solid 8c8c8c;
+    border-radius: 5px;
+    background-color: #8c8c8c;
+  }
+`;
+export const ProfileRightMiddle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const ProfileRightMiddleIndicator = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 600;
+  color: #000;
+  font-size: 32px;
+  .icon {
+    color: #8c8c8c;
+  }
+`;
+export const ProfileRightLogo = styled.div``;
+export const RightDataIndicator = styled.div`
+  font-weight: 600;
+  color: #8c8c8c;
+  font-size: 14px;
+`;
+export const RightProfileCharts = styled.div``;
 
 //Account & security
 export const AccountContainer = styled.div``;

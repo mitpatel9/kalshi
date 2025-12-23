@@ -1,19 +1,19 @@
-import {
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-} from "reactstrap";
 import styled from "styled-components";
 
 export const MarketSection = styled.div``;
 export const SiteLayout = styled.div`
   width: 100%;
   padding: 0px 2rem;
+
+  @media (max-width: 820px) {
+    padding: 5px;
+  }
+  @media (max-width: 600px) {
+    padding: 5px;
+  }
 `;
 
 //header section
-
 export const HeaderDiv = styled.div`
   display: flex;
   align-items: center;
@@ -258,8 +258,26 @@ export const InfoMainContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem 0rem;
+
+  @media (max-width: 820px) {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
 `;
-export const TabSection = styled.div``;
+export const TabSection = styled.div`
+  @media (max-width: 820px) {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
 export const IconContainer = styled.div`
   display: flex;
   align-items: center;
@@ -287,7 +305,8 @@ export const SubTitle = styled.div`
 
 //trade posting section
 export const TradeContainer = styled.div`
-  border: 1px solid #e3e6e8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 8px;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
@@ -476,18 +495,9 @@ export const RewardsDropbox = styled.div`
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 5px 16px;
+  position: relative;
+  display: inline-block;
 `;
-
-export const ToggleDropbox = styled(DropdownToggle)`
-  all: unset;
-
-  &:hover {
-    color: #000;
-    background-color: unset;
-  }
-`;
-export const MenuDropbox = styled(DropdownMenu)``;
-export const ItemDropbox = styled(DropdownItem)``;
 
 export const RewardDataListingHed = styled.div`
   display: flex;
