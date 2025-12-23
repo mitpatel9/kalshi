@@ -44,7 +44,7 @@ export const SearchBar = styled.div`
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    color: #000 !important;
+    color: var(--primary--black) !important;
     font-size: 18px;
   }
 
@@ -52,15 +52,15 @@ export const SearchBar = styled.div`
     width: 100%;
     padding: 10px 12px 10px 40px;
     border-radius: 12px;
-    border: 1px solid #fd7979;
+    border: 1px solid var(--primary--color);
     background-color: #ffcdc98f;
-    color: #000;
+    color: var(--primary--black);
     font-size: 12px;
     transition: all 0.2s ease;
 
     &:focus {
-      background-color: #fff;
-      border-color: #fd7979;
+      background-color: var(--primary--white);
+      border-color: var(--primary--color);
       outline: none;
       box-shadow: 0 0 0 2px rgba(253, 121, 121, 0.2);
     }
@@ -82,11 +82,11 @@ export const HeaderMenuIcon = styled.div`
   }
 `;
 export const SButton = styled.div`
-  background: #fd7979;
-  color: #fff;
+  background: var(--primary--color);
+  color: var(--primary--white);
   font-weight: 600;
   padding: 8px 16px;
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
   border-radius: 10px;
   cursor: pointer;
   font-size: 12px;
@@ -114,7 +114,7 @@ export const ProfileSidebarInner = styled.div`
   position: absolute;
   top: 60px;
   right: 20px;
-  background: #fff;
+  background: var(--primary--white);
   border-radius: 8px;
   padding: 16px;
   min-width: 180px;
@@ -133,11 +133,11 @@ export const LeaderBoardInner = styled.div`
   cursor: pointer;
 `;
 export const ProfilemenuIcons = styled.div`
-  border: 1px solid #fd7979;
+  border: 1px solid var(--primary--color);
   border-radius: 50%;
   padding: 10px;
-  background: #fd7979;
-  color: #fff;
+  background: var(--primary--color);
+  color: var(--primary--white);
 `;
 export const ProfilemenuIconsName = styled.div`
   font-weight: 600;
@@ -172,7 +172,7 @@ export const NotificationInner = styled.div`
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: #fff;
+  background-color: var(--primary--white);
   border-radius: 8px;
   padding: 16px;
   min-width: 180px;
@@ -183,7 +183,7 @@ export const NotificationInner = styled.div`
 export const NotificationTitle = styled.div`
   font-weight: 600;
   font-size: 14px;
-  color: #000;
+  color: var(--primary--black);
 `;
 export const NotificationArea = styled.div``;
 
@@ -208,11 +208,11 @@ export const MenuItem = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: #000;
+    color: var(--primary--black);
   }
 
   &.active {
-    color: #000;
+    color: var(--primary--black);
   }
 `;
 
@@ -232,7 +232,7 @@ export const SubMenuContainer = styled.div`
 export const SubMenuItem = styled.div`
   font-weight: 500;
   font-size: 12px;
-  color: #000;
+  color: var(--primary--black);
   cursor: pointer;
   border-radius: 50px;
   padding: 0.5rem;
@@ -240,15 +240,15 @@ export const SubMenuItem = styled.div`
   border: 1px solid #8c8c8c;
 
   &:hover {
-    color: #fd7979;
+    color: var(--primary--color);
     background-color: #ffcdc98f;
-    border: 1px solid #fd7979;
+    border: 1px solid var(--primary--color);
   }
 
   &.active {
-    color: #fd7979;
+    color: var(--primary--color);
     background-color: #ffcdc98f;
-    border: 1px solid #fd7979;
+    border: 1px solid var(--primary--color);
   }
 `;
 
@@ -283,7 +283,7 @@ export const IconContainer = styled.div`
   align-items: center;
 `;
 export const IconInfo = styled.div`
-  color: #fd7979;
+  color: var(--primary--color);
   height: 48px;
   width: 48px;
   display: flex;
@@ -294,7 +294,7 @@ export const IconInfo = styled.div`
   margin-right: 10px;
 `;
 export const MainTitle = styled.div`
-  color: #fd7979;
+  color: var(--primary--color);
   font-weight: 600;
   font-size: 16px;
 `;
@@ -370,7 +370,7 @@ export const ProgressArc = styled.path`
 export const PercentageText = styled.div`
   font-size: 8px;
   font-weight: 700;
-  color: #000;
+  color: var(--primary--black);
   margin-top: -20px;
 `;
 
@@ -423,7 +423,7 @@ export const YBtn = styled.div`
   padding: 0.5rem 1rem;
 
   &:hover {
-    color: #fff;
+    color: var(--primary--white);
     background-color: #30a159;
   }
 `;
@@ -438,7 +438,7 @@ export const NBtn = styled.div`
   border-radius: 3px;
   padding: 0.5rem 1rem;
   &:hover {
-    color: #fff;
+    color: var(--primary--white);
     background-color: #e33939;
   }
 `;
@@ -496,7 +496,7 @@ export const MenuItemFooter = styled.div`
   font-size: 12px;
   color: #b5b5b5;
   &:hover {
-    color: #000;
+    color: var(--primary--black);
   }
 `;
 
@@ -525,7 +525,7 @@ export const IncentivesMenuContainer = styled.div``;
 export const IncentivesMenuItem = styled.div`
   font-weight: 500;
   font-size: 14px;
-  color: #000;
+  color: var(--primary--black);
   padding: 0.5rem 0rem;
   cursor: pointer;
 
@@ -538,7 +538,7 @@ export const RewardsContainer = styled.div``;
 export const RewardHedding = styled.div`
   font-weight: 600;
   font-size: 24px;
-  color: #000;
+  color: var(--primary--black);
 `;
 export const RewardsDropboxContainer = styled.div`
   display: flex;
@@ -549,7 +549,7 @@ export const RewardsDropboxContainer = styled.div`
 export const RewardsDropbox = styled.div`
   font-weight: 500;
   font-size: 14px;
-  color: #000;
+  color: var(--primary--black);
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 5px 16px;
@@ -605,10 +605,10 @@ export const ListingContainer = styled.div``;
 export const ListingContainerHed = styled.div`
   font-weight: 500;
   font-size: 13px;
-  color: #000;
+  color: var(--primary--black);
 `;
 export const ListingContainerSubText = styled.div`
-  color: #000;
+  color: var(--primary--black);
   font-weight: 600;
   font-size: 12px;
 `;
@@ -619,7 +619,7 @@ export const RewardListingStart = styled.div`
 export const StartHedding = styled.div`
   font-weight: 600;
   font-size: 13px;
-  color: #000;
+  color: var(--primary--black);
 `;
 export const StartHeddingSub = styled.div`
   font-weight: 500;
@@ -644,7 +644,7 @@ export const RewardListingIncentive = styled.div`
   justify-content: center;
   font-weight: 600;
   font-size: 13px;
-  color: #000;
+  color: var(--primary--black);
   gap: 5px;
   cursor: pointer;
 `;
@@ -672,7 +672,7 @@ export const RightJoining = styled.div`
 export const WelcomeText = styled.div`
   font-size: 24px;
   font-weight: 600;
-  color: #fd7979;
+  color: var(--primary--color);
   text-align: center;
 `;
 export const WelcomeSubText = styled.div`
@@ -687,33 +687,33 @@ export const JoinToggle = styled.div`
 `;
 export const LoginName = styled.div`
   text-align: center;
-  background: #fff;
-  color: #fd7979;
+  background: var(--primary--white);
+  color: var(--primary--color);
   font-weight: 600;
   padding: 8px 16px;
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
   width: 50%;
   cursor: pointer;
   font-size: 14px;
   text-align: center;
   &.active {
-    background: #fd7979;
-    color: #fff;
+    background: var(--primary--color);
+    color: var(--primary--white);
   }
 `;
 export const SignUpName = styled.div`
   font-weight: 600;
   padding: 8px 16px;
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
   width: 50%;
   cursor: pointer;
   font-size: 14px;
   text-align: center;
-  background: #fff;
-  color: #fd7979;
+  background: var(--primary--white);
+  color: var(--primary--color);
   &.active {
-    background: #fd7979;
-    color: #fff;
+    background: var(--primary--color);
+    color: var(--primary--white);
   }
 `;
 export const JoinContainer = styled.div``;
@@ -724,11 +724,11 @@ export const RegisterContainer = styled.div`
   padding: 1rem 0rem;
 `;
 export const JoinningButton = styled.div`
-  background: #fd7979;
-  color: #fff;
+  background: var(--primary--color);
+  color: var(--primary--white);
   font-weight: 600;
   padding: 8px 16px;
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
@@ -740,7 +740,7 @@ export const TermsandCondition = styled.div`
   font-weight: 400;
   span {
     font-weight: 600;
-    color: #fd7979;
+    color: var(--primary--color);
     cursor: pointer;
   }
 `;
@@ -767,7 +767,7 @@ export const DepositIcon = styled.div``;
 export const DepositIconHed = styled.div`
   font-size: 12px;
   font-weight: 600;
-  color: #000;
+  color: var(--primary--black);
 `;
 export const DepositIconSubText = styled.div`
   font-size: 10px;
@@ -777,7 +777,7 @@ export const DepositIconSubText = styled.div`
 export const DepositLogo = styled.div`
   font-size: 24px;
   font-weight: 600;
-  color: #fd7979;
+  color: var(--primary--color);
 `;
 export const DepositMethodContainer = styled.div`
   border: 0.1px solid #b5b5b5;
@@ -794,7 +794,7 @@ export const DepositMethodContainer = styled.div`
 export const DepositMethodName = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: #000;
+  color: var(--primary--black);
 `;
 
 //PageNotFound
@@ -834,8 +834,8 @@ export const PageNotFoundBtn = styled.div`
   padding: 12px 24px;
   font-size: 15px;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #000;
+  color: var(--primary--white)fff;
+  background-color: var(--primary--black);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
