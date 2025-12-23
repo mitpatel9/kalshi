@@ -336,6 +336,9 @@ export const TradeHeaderText = styled.div`
   font-weight: 600;
   font-size: 12px;
   cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 export const TradeChanceChart = styled.div``;
 
@@ -412,7 +415,6 @@ export const TradeBtn = styled.div`
   gap: 5px;
 `;
 export const YBtn = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -427,6 +429,21 @@ export const YBtn = styled.div`
     background-color: #30a159;
   }
 `;
+
+export const Ycontainer = styled.div`
+  width: 100%;
+`;
+export const YText = styled.div`
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+
+  span {
+    color: #30a159;
+  }
+`;
+
 export const NBtn = styled.div`
   display: flex;
   justify-content: center;
@@ -834,7 +851,7 @@ export const PageNotFoundBtn = styled.div`
   padding: 12px 24px;
   font-size: 15px;
   font-weight: 600;
-  color: var(--primary--white)fff;
+  color: var(--primary--white) fff;
   background-color: var(--primary--black);
   border-radius: 8px;
   cursor: pointer;

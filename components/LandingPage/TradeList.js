@@ -23,6 +23,8 @@ import {
   TradeTypes,
   TradeVolume,
   YBtn,
+  Ycontainer,
+  YText,
 } from "@/StyledComponents/LayoutStyled";
 import Image from "next/image";
 import React from "react";
@@ -30,10 +32,11 @@ import Test from "../../asset/Image/test.jpg";
 import { Icon } from "@iconify/react";
 import { Col, Row } from "reactstrap";
 import { useRouter } from "next/router";
+import { CommonDiv } from "@/StyledComponents/CommonStyled";
 
 const TradeList = () => {
   const router = useRouter();
-  const loopData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const loopData = [1, 2, 3, 4];
   return (
     <Row>
       {loopData.length > 0 &&
@@ -146,8 +149,18 @@ const TradeList = () => {
 
               <TradeMiddleTwo>
                 <TradeBtn>
-                  <YBtn>Yes</YBtn>
-                  <NBtn>No</NBtn>
+                  <Ycontainer>
+                    <YBtn>Yes</YBtn>
+                    <YText>
+                      $100 → <span>$1,045</span>
+                    </YText>
+                  </Ycontainer>
+                  <Ycontainer>
+                    <NBtn>No</NBtn>
+                    <YText>
+                      $100 → <span>$1,045</span>
+                    </YText>
+                  </Ycontainer>
                 </TradeBtn>
               </TradeMiddleTwo>
 
