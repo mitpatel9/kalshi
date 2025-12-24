@@ -410,6 +410,7 @@ export const TradeSecHeding = styled.div`
   font-weight: 500;
   font-size: 14px;
 `;
+
 export const TradeBtn = styled.div`
   display: flex;
   gap: 5px;
@@ -423,6 +424,7 @@ export const YBtn = styled.div`
   color: #30a159;
   border-radius: 3px;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 
   &:hover {
     color: var(--primary--white);
@@ -454,6 +456,7 @@ export const NBtn = styled.div`
   color: #e33939;
   border-radius: 3px;
   padding: 0.5rem 1rem;
+  cursor: pointer;
   &:hover {
     color: var(--primary--white);
     background-color: #e33939;
@@ -851,9 +854,139 @@ export const PageNotFoundBtn = styled.div`
   padding: 12px 24px;
   font-size: 15px;
   font-weight: 600;
-  color: var(--primary--white) fff;
+  color: var(--primary--white);
   background-color: var(--primary--black);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+`;
+
+//Slider Market
+export const SliderMarketContainer = styled.div`
+  padding: 2rem 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 5px;
+  overflow: hidden;
+  .slick-dots {
+    bottom: -10px !important;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
+`;
+export const SliderContainer = styled.div`
+  display: flex !important;
+  justify-content: space-around;
+`;
+export const SliderMarketLeft = styled.div`
+  width: 40%;
+`;
+
+export const SliderMarketHed = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  .image {
+    max-height: 78px;
+    max-width: 78px;
+    border-radius: 10px;
+  }
+`;
+export const SliderMarketHedText = styled.div`
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+
+   &:hover {
+    color: #b5b5b5;
+  }
+`;
+export const SliderMarketMiddle = styled.div`
+  margin: 2rem 0rem;
+  margin-bottom: 2rem;
+`;
+export const SliderMarketNews = styled.div`
+  margin: 1rem 0rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: #b5b5b5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+  }
+`;
+export const SliderMarketVolume = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: #b5b5b5;
+
+  .icons {
+    color: #000;
+    width: 18px;
+    height: 18px;
+  }
+`;
+
+export const SliderMarketRight = styled.div`
+  margin-left: 0.5rem;
+  width: 55%;
+`;
+
+export const SliderMarketSubGrp = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0rem;
+`;
+export const SliderMarketHedding = styled.div`
+  width: 60%;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+`;
+export const SliderMarketScrore = styled.div`
+  width: 20%;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+`;
+export const SliderMarketBtn = styled.div`
+  width: 20%;
+  display: flex;
+  gap: 5px;
+`;
+export const SliderMarketYBtn = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: #30a159;
+   background-image: linear-gradient(310deg, #7928ca, #ff0080);
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+`;
+export const SliderMarketNBtn = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+   background-image: linear-gradient(310deg, #4b5563, #1f2933);
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 `;

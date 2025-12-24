@@ -10,7 +10,7 @@ export const ProfileLeft = styled.div`
 `;
 export const ProfileRight = styled.div`
   width: 80%;
-  padding-left: 2rem;
+  padding-left: 1rem;
 `;
 export const ProfileMenuContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -47,7 +47,6 @@ export const ProfilesContainer = styled.div`
 `;
 export const ProfilesLeft = styled.div`
   width: 50%;
-  height: 250px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   padding: 1rem;

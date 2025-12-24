@@ -29,6 +29,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import Test from "../../asset/Image/test.jpg";
 import Image from "next/image";
+import ProfileGraph from "../Graph/ProfileGraph";
 
 const Profile = () => {
   return (
@@ -98,7 +99,9 @@ const Profile = () => {
           <ProfileRightLogo>Kalshi</ProfileRightLogo>
         </ProfileRightMiddle>
           <RightDataIndicator>past Day</RightDataIndicator>
-        <RightProfileCharts></RightProfileCharts>
+        <RightProfileCharts>
+          <ProfileGraph/>
+        </RightProfileCharts>
       </ProfilesRight>
     </ProfilesContainer>
   );
