@@ -3,6 +3,7 @@ import {
   HeaderMenuIcon,
   LeftDiv,
   Logo,
+  Motto,
   RightDiv,
   SButton,
   SearchBar,
@@ -24,7 +25,8 @@ const HeaderLayout = () => {
     <>
       <HeaderDiv>
         <LeftDiv>
-          <Logo onClick={() => router.push("/")}>Klashi</Logo>
+          <Logo onClick={() => router.push("/")}>Avrodha</Logo>
+          <Motto>Knowledge Is The New currency.</Motto>
         </LeftDiv>
         <RightDiv>
           <SearchBar>

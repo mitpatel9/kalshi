@@ -18,12 +18,12 @@ export const HeaderDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding-top: 10px;
 `;
 export const LeftDiv = styled.div`
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  
 `;
 export const RightDiv = styled.div`
   display: flex;
@@ -32,7 +32,19 @@ export const RightDiv = styled.div`
 `;
 export const Logo = styled.div`
   cursor: pointer;
+  font-weight: 1000;
+  font-size: 32px;
+  color: #fd7979;
 `;
+
+export const Motto = styled.div`
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 10px;
+  color: #fd7979;
+      margin-top: -9px;
+`;
+
 export const SearchBar = styled.div`
   position: relative;
   width: 280px;
@@ -899,7 +911,7 @@ export const SliderMarketHedText = styled.div`
   color: #000;
   cursor: pointer;
 
-   &:hover {
+  &:hover {
     color: #b5b5b5;
   }
 `;
@@ -972,7 +984,7 @@ export const SliderMarketYBtn = styled.div`
   font-weight: 600;
   font-size: 12px;
   background-color: #30a159;
-   background-image: linear-gradient(310deg, #7928ca, #ff0080);
+  background-image: linear-gradient(310deg, #7928ca, #ff0080);
   color: #fff;
   border-radius: 3px;
   padding: 0.5rem 1rem;
@@ -984,7 +996,7 @@ export const SliderMarketNBtn = styled.div`
   width: 100%;
   font-weight: 600;
   font-size: 12px;
-   background-image: linear-gradient(310deg, #4b5563, #1f2933);
+  background-image: linear-gradient(310deg, #4b5563, #1f2933);
   color: #fff;
   border-radius: 3px;
   padding: 0.5rem 1rem;
