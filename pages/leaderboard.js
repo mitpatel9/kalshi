@@ -52,7 +52,7 @@ const leaderboard = () => {
               <LeaderBoardItem className="active">All</LeaderBoardItem>
               <LeaderBoardItem>Today</LeaderBoardItem>
               <LeaderBoardItem>Weekly</LeaderBoardItem>
-              <LeaderBoardItem>Monthly</LeaderBoardItem>
+              <LeaderBoardItem className="active">Monthly</LeaderBoardItem>
             </LeaderBoardMenu>
             <LeaderBoardCategory>
               Category

@@ -794,10 +794,9 @@ export const RewardDataListingHed = styled.div`
 
   /* Mobile */
   @media (max-width: 600px) {
-    font-size: 10px;
+    font-size: 8px;
   }
 `;
-
 
 export const RewardMarket = styled.div`
   width: 50%;
@@ -835,17 +834,37 @@ export const RewardListingImg = styled.div`
     max-width: 38px;
     border-radius: 10px;
   }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .image {
+      max-height: 22px;
+      max-width: 22px;
+      border-radius: 10px;
+      border-radius: 5px;
+    }
+  }
 `;
 export const ListingContainer = styled.div``;
 export const ListingContainerHed = styled.div`
   font-weight: 500;
   font-size: 13px;
   color: var(--primary--black);
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const ListingContainerSubText = styled.div`
   color: var(--primary--black);
   font-weight: 600;
   font-size: 12px;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 6px;
+  }
 `;
 export const RewardListingStart = styled.div`
   width: 15%;
@@ -855,11 +874,20 @@ export const StartHedding = styled.div`
   font-weight: 600;
   font-size: 13px;
   color: var(--primary--black);
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const StartHeddingSub = styled.div`
   font-weight: 500;
   font-size: 13px;
   color: #b5b5b5;
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const RewardListingEnd = styled.div`
   width: 15%;
@@ -871,6 +899,11 @@ export const RewardListingProgram = styled.div`
   font-weight: 600;
   font-size: 13px;
   color: #e33939;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const RewardListingIncentive = styled.div`
   display: flex;
@@ -882,6 +915,11 @@ export const RewardListingIncentive = styled.div`
   color: var(--primary--black);
   gap: 5px;
   cursor: pointer;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 
 // login sign up modal css
@@ -1401,6 +1439,7 @@ export const LeaderBoardMenuContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 1.5rem 0rem;
+
   /* Mobile */
   @media (max-width: 600px) {
     flex-direction: column;
@@ -1443,6 +1482,12 @@ export const LeaderBoardItem = styled.div`
   @media (max-width: 600px) {
     padding: 6px 14px;
     font-size: 13px;
+
+    &.active {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 export const LeaderBoardCategory = styled.div`
@@ -1473,7 +1518,7 @@ export const LeaderBoardTableHed = styled.div`
 
   /* Mobile */
   @media (max-width: 600px) {
-    font-size: 12px;
+    font-size: 8px;
   }
 `;
 export const LeaderBoardTableNo = styled.div`
@@ -1513,11 +1558,26 @@ export const LeaderboardListingleftImg = styled.div`
     max-width: 38px;
     border-radius: 50%;
   }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .image {
+      max-height: 22px;
+      max-width: 22px;
+      border-radius: 10px;
+      border-radius: 5px;
+    }
+  }
 `;
 export const LeaderboardListingTableName = styled.div`
   color: var(--primary--black);
   font-weight: 600;
   font-size: 12px;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const LeaderBoardListingTableProfitLoss = styled.div`
   width: 15%;
@@ -1525,6 +1585,11 @@ export const LeaderBoardListingTableProfitLoss = styled.div`
   color: var(--primary--black);
   font-weight: 600;
   font-size: 12px;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const LeaderBoardListingTableVolume = styled.div`
   width: 15%;
@@ -1532,6 +1597,10 @@ export const LeaderBoardListingTableVolume = styled.div`
   color: var(--primary--black);
   font-weight: 600;
   font-size: 12px;
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 export const LeaderboardRightTextRight = styled.div`
   font-weight: 600;

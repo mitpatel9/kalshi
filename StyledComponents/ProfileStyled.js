@@ -346,14 +346,12 @@ export const AuthRadioButton = styled.div`
 `;
 
 //activity
-export const ActivityContainer = styled.div`
-
-`;
+export const ActivityContainer = styled.div``;
 export const ActivityHedText = styled.div`
   font-weight: 600;
   color: #000;
-  font-size: 24px;\
-    @media (max-width: 1024px) {
+  font-size: 24px;
+  \ @media (max-width: 1024px) {
     font-size: 20px;
   }
 
@@ -367,7 +365,7 @@ export const ActivityMenu = styled.div`
   gap: 0.5rem;
   margin: 1rem 0rem;
 
-    @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     gap: 0.4rem;
   }
 
@@ -397,13 +395,13 @@ export const ActivityMenuItem = styled.div`
     border: 2px solid #000;
   }
 
-    @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     padding: 6px 12px;
     font-size: 11px;
   }
 
   @media (max-width: 600px) {
-    padding: 5px 10px;
+    padding: 5px 8px;
     font-size: 10px;
   }
 `;
