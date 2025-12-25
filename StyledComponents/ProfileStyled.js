@@ -4,13 +4,33 @@ import styled from "styled-components";
 export const ProfileContainer = styled.div`
   margin-top: 2rem;
   display: flex;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 export const ProfileLeft = styled.div`
   width: 20%;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 export const ProfileRight = styled.div`
   width: 80%;
   padding-left: 1rem;
+
+  /* Tablet & Mobile */
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding-left: 0;
+  }
 `;
 export const ProfileMenuContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -19,6 +39,11 @@ export const ProfileMenuContainer = styled.div`
   margin-bottom: 2rem;
   padding: 0.3rem;
   max-width: fit-content;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    overflow-x: auto;
+  }
 `;
 export const ProfileMenuItem = styled.div`
   display: flex;
@@ -39,11 +64,33 @@ export const ProfileMenuItem = styled.div`
     border-radius: 5px;
     background-color: #ededed;
   }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
 `;
 //Profile
 export const ProfilesContainer = styled.div`
   display: flex;
   gap: 1rem;
+
+  /* Tablet: stack vertically */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  /* Mobile: stack vertically */
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 `;
 export const ProfilesLeft = styled.div`
   width: 50%;
@@ -53,10 +100,26 @@ export const ProfilesLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  /* Tablet & Mobile: full width */
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0.8rem;
+  }
 `;
 export const ProfileHed = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0.8rem;
+  }
 `;
 export const ProfileImg = styled.div`
   display: flex;
@@ -65,24 +128,40 @@ export const ProfileImg = styled.div`
     border-radius: 50%;
     margin-right: 10px;
   }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
 `;
 export const ProfileAccount = styled.div``;
 export const ProfileName = styled.div`
   font-weight: 600;
   color: #000;
   font-size: 18px;
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 export const ProfileJOiningDate = styled.div`
   font-weight: 400;
   color: #8c8c8c;
   font-size: 12px;
+
+  @media (max-width: 600px) {
+    font-size: 11px;
+  }
 `;
 export const ProfileSecretKey = styled.div`
   cursor: pointer;
 `;
 export const ProfileLeftBottom = styled.div`
   display: flex;
-      justify-content: space-around;
+  justify-content: space-around;
+
+ 
 `;
 export const YourPosition = styled.div`
   text-align: center;
@@ -112,6 +191,15 @@ export const ProfilesRight = styled.div`
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  /* Tablet & Mobile: full width */
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0.8rem;
+  }
 `;
 export const ProfilesRightHed = styled.div`
   display: flex;
@@ -146,6 +234,18 @@ export const TimelineItem = styled.div`
     border-radius: 5px;
     background-color: #8c8c8c;
   }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
 `;
 export const ProfileRightMiddle = styled.div`
   display: flex;
@@ -161,6 +261,13 @@ export const ProfileRightMiddleIndicator = styled.div`
   font-size: 32px;
   .icon {
     color: #8c8c8c;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
   }
 `;
 export const ProfileRightLogo = styled.div``;

@@ -10,6 +10,7 @@ import {
   ListingContainerSubText,
   RewardDataListing,
   RewardDataListingHed,
+  RewardDataListingMobile,
   RewardEnd,
   RewardHedding,
   RewardIncentive,
@@ -102,32 +103,35 @@ const RewardData = () => {
       {/* Data listing  */}
       {loopData.length > 0 &&
         loopData.map(() => (
-          <RewardDataListing>
-            <RewardListingMarket>
-              <RewardListingImg>
-                {" "}
-                <Image src={Test} className="image" />
-              </RewardListingImg>
-              <ListingContainer>
-                <ListingContainerHed>Republican Party</ListingContainerHed>
-                <ListingContainerSubText>
-                  Which party will win the U.S. Senate next year?
-                </ListingContainerSubText>
-              </ListingContainer>
-            </RewardListingMarket>
-            <RewardListingStart>
-              <StartHedding>Nov 12 2025</StartHedding>
-              <StartHeddingSub>8:48 AM GMT 5:30</StartHeddingSub>
-            </RewardListingStart>
-            <RewardListingEnd>
-              <StartHedding>Nov 12 2025</StartHedding>
-              <StartHeddingSub>8:48 AM GMT 5:30</StartHeddingSub>
-            </RewardListingEnd>
-            <RewardListingProgram>Liquidity</RewardListingProgram>
-            <RewardListingIncentive>
-              $200 <Icon icon="icons8:plus" width={18} height={18} />
-            </RewardListingIncentive>
-          </RewardDataListing>
+          <>
+            <RewardDataListing>
+              <RewardListingMarket>
+                <RewardListingImg>
+                  {" "}
+                  <Image src={Test} className="image" />
+                </RewardListingImg>
+                <ListingContainer>
+                  <ListingContainerHed>Republican Party</ListingContainerHed>
+                  <ListingContainerSubText>
+                    Which party will win the U.S. Senate next year?
+                  </ListingContainerSubText>
+                </ListingContainer>
+              </RewardListingMarket>
+              <RewardListingStart>
+                <StartHedding>Nov 12 2025</StartHedding>
+                <StartHeddingSub>8:48 AM GMT 5:30</StartHeddingSub>
+              </RewardListingStart>
+              <RewardListingEnd>
+                <StartHedding>Nov 12 2025</StartHedding>
+                <StartHeddingSub>8:48 AM GMT 5:30</StartHeddingSub>
+              </RewardListingEnd>
+              <RewardListingProgram>Liquidity</RewardListingProgram>
+              <RewardListingIncentive>
+                $200 <Icon icon="icons8:plus" width={18} height={18} />
+              </RewardListingIncentive>
+            </RewardDataListing>
+            <Hr />
+          </>
         ))}
     </RewardsContainer>
   );

@@ -19,22 +19,45 @@ export const HeaderDiv = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
+  /* Mobile */
+  @media (max-width: 600px) {
+    padding-top: 8px;
+  }
 `;
 export const LeftDiv = styled.div`
   display: flex;
   flex-direction: column;
-  
 `;
 export const RightDiv = styled.div`
   display: flex;
   align-items: center;
   gap: 0.15rem;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    gap: 0.75rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    gap: 0.5rem;
+  }
 `;
 export const Logo = styled.div`
   cursor: pointer;
   font-weight: 1000;
   font-size: 32px;
   color: #fd7979;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 export const Motto = styled.div`
@@ -42,7 +65,12 @@ export const Motto = styled.div`
   font-weight: 600;
   font-size: 10px;
   color: #fd7979;
-      margin-top: -9px;
+  margin-top: -9px;
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 9px;
+    margin-top: -6px;
+  }
 `;
 
 export const SearchBar = styled.div`
@@ -78,7 +106,13 @@ export const SearchBar = styled.div`
     }
   }
 
-  @media (max-width: 769px) {
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 220px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
     display: none;
   }
 `;
@@ -91,6 +125,15 @@ export const HeaderMenuIcon = styled.div`
     width: 22px;
     height: 22px;
     cursor: pointer;
+  }
+  /* Mobile */
+  @media (max-width: 600px) {
+    margin-left: 0.5rem;
+
+    .menuIcon {
+      width: 20px;
+      height: 20px;
+    }
   }
 `;
 export const SButton = styled.div`
@@ -106,6 +149,16 @@ export const SButton = styled.div`
   display: flex;
   align-items: center;
   gap: 6px;
+  /* Tablet */
+
+  @media (max-width: 1024px) {
+    padding: 7px 14px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 // profile sidebar on header
@@ -119,6 +172,12 @@ export const ProfileSideBar = styled.div`
     left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 9999;
+  }
+  @media (min-width: 1025px) {
+    &.active {
+      background: transparent;
+    }
   }
 `;
 
@@ -132,11 +191,36 @@ export const ProfileSidebarInner = styled.div`
   min-width: 180px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 10000;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    top: 70px;
+    right: 16px;
+    min-width: 200px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 85%;
+    max-width: 300px;
+    border-radius: 0;
+    padding: 20px;
+    background: var(--primary--white);
+  }
 `;
 
 export const ProfileLeaderBoardContainer = styled.div`
   display: flex;
   gap: 0.5rem;
+  /* Mobile */
+  @media (max-width: 600px) {
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
 `;
 export const LeaderBoardInner = styled.div`
   display: flex;
@@ -150,11 +234,21 @@ export const ProfilemenuIcons = styled.div`
   padding: 10px;
   background: var(--primary--color);
   color: var(--primary--white);
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    padding: 12px;
+  }
 `;
 export const ProfilemenuIconsName = styled.div`
   font-weight: 600;
   font-size: 12px;
   color: #8c8c8c;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 11px;
+  }
 `;
 export const SidebarMenuItem = styled.div`
   font-weight: 600;
@@ -162,6 +256,17 @@ export const SidebarMenuItem = styled.div`
   color: #8c8c8c;
   cursor: pointer;
   margin: 0.5rem 0rem;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding: 5px 0;
+  }
 `;
 
 // Notifiaction on header
@@ -175,6 +280,7 @@ export const NotificationSideBar = styled.div`
     left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 9999;
   }
 `;
 
@@ -182,7 +288,7 @@ export const NotificationInner = styled.div`
   width: 30vw;
   height: 85vh;
   position: absolute;
-  top: 60px;
+  top: 80px;
   right: 20px;
   background-color: var(--primary--white);
   border-radius: 8px;
@@ -190,14 +296,40 @@ export const NotificationInner = styled.div`
   min-width: 180px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 45vw;
+    height: 85vh;
+    right: 16px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 20px;
+  }
 `;
 
 export const NotificationTitle = styled.div`
   font-weight: 600;
   font-size: 14px;
   color: var(--primary--black);
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
-export const NotificationArea = styled.div``;
+export const NotificationArea = styled.div`
+  margin-top: 1rem;
+  height: calc(100% - 30px);
+  overflow-y: auto;
+`;
 
 //menu item
 export const MenuContainer = styled.div`
@@ -211,6 +343,18 @@ export const MenuContainer = styled.div`
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    gap: 14px;
+    padding: 8px 0;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    gap: 12px;
+    padding: 6px 0;
   }
 `;
 export const MenuItem = styled.div`
@@ -226,6 +370,16 @@ export const MenuItem = styled.div`
   &.active {
     color: var(--primary--black);
   }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 export const SubMenuContainer = styled.div`
@@ -239,6 +393,17 @@ export const SubMenuContainer = styled.div`
 
   &::-webkit-scrollbar {
     display: none;
+  }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    gap: 10px;
+    padding: 8px 0;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    gap: 8px;
+    padding: 6px 0;
   }
 `;
 export const SubMenuItem = styled.div`
@@ -262,6 +427,18 @@ export const SubMenuItem = styled.div`
     background-color: #ffcdc98f;
     border: 1px solid var(--primary--color);
   }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 11px;
+    padding: 0.45rem 0.7rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 11px;
+    padding: 0.4rem 0.65rem;
+  }
 `;
 
 //information section
@@ -271,22 +448,23 @@ export const InfoMainContainer = styled.div`
   justify-content: space-between;
   padding: 2rem 0rem;
 
-  @media (max-width: 820px) {
-    display: flex;
+  /* Tablet */
+  @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 1rem 0rem;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
   }
+
+  /* Mobile */
   @media (max-width: 600px) {
-    display: flex;
     flex-direction: column;
-    padding: 1rem 0rem;
+    gap: 1rem;
+    padding: 1rem 0;
   }
 `;
 export const TabSection = styled.div`
-  @media (max-width: 820px) {
-    display: none;
-  }
-  @media (max-width: 600px) {
+  /* Tablet & Mobile */
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
@@ -549,9 +727,19 @@ export const IncentivesContainer = styled.div`
 `;
 export const IncentivesLeft = styled.div`
   width: 20%;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 export const IncentivesRight = styled.div`
   width: 80%;
+
+  /* Tablet & Mobile */
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 export const IncentivesMenuContainer = styled.div``;
 export const IncentivesMenuItem = styled.div`
@@ -564,6 +752,10 @@ export const IncentivesMenuItem = styled.div`
   &.active {
     color: #e33939;
   }
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 `;
 
 export const RewardsContainer = styled.div``;
@@ -571,6 +763,10 @@ export const RewardHedding = styled.div`
   font-weight: 600;
   font-size: 24px;
   color: var(--primary--black);
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
 `;
 export const RewardsDropboxContainer = styled.div`
   display: flex;
@@ -582,7 +778,7 @@ export const RewardsDropbox = styled.div`
   font-weight: 500;
   font-size: 14px;
   color: var(--primary--black);
-  border: 1px solid #e8e8e8;
+  border: 1px solid #b5b5b5;
   border-radius: 5px;
   padding: 5px 16px;
   position: relative;
@@ -595,7 +791,14 @@ export const RewardDataListingHed = styled.div`
   font-weight: 500;
   font-size: 14px;
   color: #b5b5b5;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 `;
+
+
 export const RewardMarket = styled.div`
   width: 50%;
 `;
@@ -618,7 +821,7 @@ export const RewardIncentive = styled.div`
 export const RewardDataListing = styled.div`
   display: flex;
   align-items: center;
-  margin: 1rem 0rem;
+  margin: 0.5rem 0rem;
 `;
 export const RewardListingMarket = styled.div`
   width: 50%;
@@ -682,7 +885,13 @@ export const RewardListingIncentive = styled.div`
 `;
 
 // login sign up modal css
+export const AuthMainContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 export const JoinningContainer = styled.div`
+  width: 70%;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -778,7 +987,13 @@ export const TermsandCondition = styled.div`
 `;
 
 // deposite modal
+export const DepositMainContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 export const DepositContainer = styled.div`
+  width: 70%;
   padding: 1rem;
   margin: 2rem 0rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -808,7 +1023,7 @@ export const DepositIconSubText = styled.div`
 `;
 export const DepositLogo = styled.div`
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 1000;
   color: var(--primary--color);
 `;
 export const DepositMethodContainer = styled.div`
@@ -886,13 +1101,40 @@ export const SliderMarketContainer = styled.div`
   .slick-dots li button:before {
     font-size: 10px;
   }
+  @media (max-width: 1024px) {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    padding: 1rem 0.75rem;
+  }
 `;
 export const SliderContainer = styled.div`
   display: flex !important;
   justify-content: space-around;
+  /* Tablet */
+  @media (max-width: 1024px) {
+    gap: 1.5rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 export const SliderMarketLeft = styled.div`
   width: 40%;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 45%;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const SliderMarketHed = styled.div`
@@ -904,6 +1146,21 @@ export const SliderMarketHed = styled.div`
     max-width: 78px;
     border-radius: 10px;
   }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .image {
+      max-width: 65px;
+      max-height: 65px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .image {
+      max-width: 55px;
+      max-height: 55px;
+    }
+  }
 `;
 export const SliderMarketHedText = styled.div`
   font-size: 24px;
@@ -914,10 +1171,28 @@ export const SliderMarketHedText = styled.div`
   &:hover {
     color: #b5b5b5;
   }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 export const SliderMarketMiddle = styled.div`
   margin: 2rem 0rem;
   margin-bottom: 2rem;
+  /* Tablet */
+  @media (max-width: 1024px) {
+    margin: 1.5rem 0;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    margin: 1rem 0;
+  }
 `;
 export const SliderMarketNews = styled.div`
   margin: 1rem 0rem;
@@ -934,6 +1209,23 @@ export const SliderMarketNews = styled.div`
     font-weight: 600;
     color: #000;
   }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 14px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 13px;
+
+    span {
+      font-size: 14px;
+    }
+  }
 `;
 export const SliderMarketVolume = styled.div`
   display: flex;
@@ -948,11 +1240,24 @@ export const SliderMarketVolume = styled.div`
     width: 18px;
     height: 18px;
   }
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 `;
 
 export const SliderMarketRight = styled.div`
   margin-left: 0.5rem;
   width: 55%;
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const SliderMarketSubGrp = styled.div`
@@ -965,17 +1270,29 @@ export const SliderMarketHedding = styled.div`
   font-weight: 500;
   font-size: 14px;
   color: #000;
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 `;
 export const SliderMarketScrore = styled.div`
   width: 20%;
   font-weight: 600;
   font-size: 14px;
   color: #000;
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 `;
 export const SliderMarketBtn = styled.div`
   width: 20%;
   display: flex;
   gap: 5px;
+  /* Mobile */
+  @media (max-width: 600px) {
+    width: 30%;
+  }
 `;
 export const SliderMarketYBtn = styled.div`
   display: flex;
@@ -989,6 +1306,12 @@ export const SliderMarketYBtn = styled.div`
   border-radius: 3px;
   padding: 0.5rem 1rem;
   cursor: pointer;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 11px;
+    padding: 0.4rem;
+  }
 `;
 export const SliderMarketNBtn = styled.div`
   display: flex;
@@ -1001,4 +1324,265 @@ export const SliderMarketNBtn = styled.div`
   border-radius: 3px;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  @media (max-width: 480px) {
+    font-size: 11px;
+    padding: 0.4rem;
+  }
+`;
+
+// Leaderboard
+export const LeaderboardMainContainer = styled.div`
+  display: flex;
+  margin-top: 2rem;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    margin-top: 1.5rem;
+  }
+`;
+export const LeaderboardHedText = styled.div`
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary--black);
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+`;
+export const LeaderboardLeft = styled.div`
+  width: 70%;
+  margin-right: 1rem;
+
+  /* Tablet & Mobile */
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+`;
+export const LeaderboardRight = styled.div`
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 5px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin: 1rem 0rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    max-height: 350px;
+    margin: 1rem 0rem;
+  }
+`;
+export const LeaderBoardMenuContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0rem;
+  /* Mobile */
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+`;
+export const LeaderBoardMenu = styled.div`
+  display: inline-flex;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  padding: 4px;
+  gap: 4px;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+`;
+export const LeaderBoardItem = styled.div`
+  border: none;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280; /* gray text */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &.active {
+    background-color: #6b7280;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+`;
+export const LeaderBoardCategory = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary--black);
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  padding: 5px 16px;
+  gap: 0.5rem;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 13px;
+    padding: 5px 12px;
+    align-self: flex-start;
+  }
+`;
+export const LeaderBoardTableHed = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  color: #b5b5b5;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
+`;
+export const LeaderBoardTableNo = styled.div`
+  width: 5%;
+`;
+export const LeaderBoardTableName = styled.div`
+  width: 65%;
+`;
+export const LeaderBoardTableProfitLoss = styled.div`
+  width: 15%;
+  text-align: center;
+`;
+export const LeaderBoardTableVolume = styled.div`
+  width: 15%;
+  text-align: center;
+`;
+export const LeaderBoardListing = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0rem;
+`;
+export const LeaderboardListingTableNo = styled.div`
+  width: 5%;
+  color: #b5b5b5;
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const LeaderboardListingleftContainer = styled.div`
+  width: 65%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+export const LeaderboardListingleftImg = styled.div`
+  .image {
+    max-height: 38px;
+    max-width: 38px;
+    border-radius: 50%;
+  }
+`;
+export const LeaderboardListingTableName = styled.div`
+  color: var(--primary--black);
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const LeaderBoardListingTableProfitLoss = styled.div`
+  width: 15%;
+  text-align: center;
+  color: var(--primary--black);
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const LeaderBoardListingTableVolume = styled.div`
+  width: 15%;
+  text-align: center;
+  color: var(--primary--black);
+  font-weight: 600;
+  font-size: 12px;
+`;
+export const LeaderboardRightTextRight = styled.div`
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary--black);
+  margin-bottom: 1rem;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+`;
+export const LeaderboardRightListing = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const RightListingTableNo = styled.div`
+  width: 10%;
+  color: #b5b5b5;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+`;
+export const RightListingContainer = styled.div`
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+export const RightListingTableImg = styled.div`
+  .image {
+    max-height: 38px;
+    max-width: 38px;
+    border-radius: 5px;
+  }
+`;
+export const RightListingTableName = styled.div`
+  color: var(--primary--black);
+  font-weight: 600;
+  font-size: 12px;
+  span {
+    font-weight: 500;
+    color: #b5b5b5;
+  }
+`;
+export const RightListingTableSubName = styled.div`
+  color: var(--primary--black);
+  font-weight: 400;
+  font-size: 12px;
+  span {
+  }
 `;

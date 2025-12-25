@@ -1,6 +1,6 @@
 import HeaderLayout from "@/components/LandingPage/HeaderLayout";
 import { ErrorMessage } from "@/StyledComponents/CommonStyled";
-import { SiteLayout } from "@/StyledComponents/LayoutStyled";
+import { AuthMainContainer, SiteLayout } from "@/StyledComponents/LayoutStyled";
 import {
   JoinContainer,
   JoinningButton,
@@ -26,6 +26,7 @@ const auth = () => {
   return (
     <SiteLayout>
       <HeaderLayout />
+      <AuthMainContainer>
       <JoinningContainer>
         {/* left section */}
         <LeftJoining>
@@ -121,7 +122,7 @@ const auth = () => {
             </TermsandCondition>
           </JoinContainer>
         </RightJoining>
-      </JoinningContainer>
+      </JoinningContainer></AuthMainContainer>
     </SiteLayout>
   );
 };

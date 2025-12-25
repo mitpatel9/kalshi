@@ -48,6 +48,7 @@ const ProfileMenuView = (props) => {
         <SidebarMenuItem onClick={() => router.push("/profile")}>
           Profile
         </SidebarMenuItem>
+        <SidebarMenuItem onClick={() => router.push("/rewards")}>Rewards</SidebarMenuItem>
         <SidebarMenuItem>Support</SidebarMenuItem>
         <SidebarMenuItem>Log Out</SidebarMenuItem>
       </ProfileSidebarInner>
