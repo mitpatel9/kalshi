@@ -8,6 +8,9 @@ import {
   AccountDeactive,
   AccountHedTitle,
   AccountProfileDetails,
+  AuthenticatorBox,
+  AuthenticatorBoxHedText,
+  AuthenticatorBoxSubText,
   AuthRadioButton,
   ComplateSetupData,
 } from "@/StyledComponents/ProfileStyled";
@@ -46,20 +49,16 @@ const AccountSecurity = (props) => {
       <AccountAuthSubText>
         Help keep your Kalshi account safe. This helps prevent anyone from
         accessing your account, even if they know your password.
-        <span>How would you like to receive this code?</span>
       </AccountAuthSubText>
-      <Hr />
-      <AuthRadioButton>
-        {" "}
-        <Input type="radio" />
-        Text message (SMS)
-      </AuthRadioButton>
-      <Hr />
-      <AuthRadioButton>
-        <Input type="radio" />
-        Email only
-      </AuthRadioButton>{" "}
-      <Hr />
+
+      <AuthenticatorBox>
+        <AuthenticatorBoxHedText>Enable 2FA</AuthenticatorBoxHedText>
+        <AuthenticatorBoxSubText>
+          Add an extra layer of security to your account using an authenticator
+          app
+        </AuthenticatorBoxSubText>
+      </AuthenticatorBox>
+
       <DeleteAccount isDelete={isDelete} toggleDelete={toggleDelete} />
     </AccountContainer>
   );

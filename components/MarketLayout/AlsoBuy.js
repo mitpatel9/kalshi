@@ -15,98 +15,101 @@ const AlsoBuy = () => {
   return (
     <>
       <AlsoBuyTopHeading>People are also buying</AlsoBuyTopHeading>
-    <AlsoBuyContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer><AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
+      <AlsoBuyContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
 
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer><AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-      <AlsoBuyTradeContainer>
-        <AlsoBuyContent>
-          <Image src={Test} className="image" />
-          <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
-        </AlsoBuyContent>
-        <AlsoBuyPercentage>91%</AlsoBuyPercentage>
-      </AlsoBuyTradeContainer>
-    </AlsoBuyContainer></>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+        <AlsoBuyTradeContainer>
+          <AlsoBuyContent>
+            <Image src={Test} className="image" />
+            <AlsoBuyHedText>Time 2025 Person of the Year</AlsoBuyHedText>
+          </AlsoBuyContent>
+          <AlsoBuyPercentage>91%</AlsoBuyPercentage>
+        </AlsoBuyTradeContainer>
+      </AlsoBuyContainer>
+    </>
   );
 };
 

@@ -12,6 +12,7 @@ import TimelineAndPayout from "@/components/MarketLayout/TimelineAndPayout";
 import TradingProhibitions from "@/components/MarketLayout/TradingProhibitions";
 import { SiteLayout } from "@/StyledComponents/LayoutStyled";
 import {
+  AlsoBuyMobileView,
   MarketLeftLayout,
   MarketRightLayout,
   MarketsLayout,
@@ -34,6 +35,9 @@ const MarketData = () => {
           <RulesSummary />
           <TimelineAndPayout />
           <TradingProhibitions />
+          <AlsoBuyMobileView>
+            <AlsoBuy />
+          </AlsoBuyMobileView>
           <BottomSec />
         </MarketLeftLayout>
         <MarketRightLayout>

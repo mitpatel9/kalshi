@@ -2,17 +2,70 @@ import styled from "styled-components";
 
 export const MarketsLayout = styled.div`
   display: flex;
+  margin: 1.5rem 0rem;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 export const MarketLeftLayout = styled.div`
   width: 70%;
   padding-right: 0.5rem;
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1rem; /* space between left and right */
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0.8rem;
+  }
 `;
 export const MarketRightLayout = styled.div`
   width: 30%;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
+
+export const AlsoBuyMobileView = styled.div`
+  @media (min-width: 1025px) {
+    display: none;
+  }
 `;
 
 //market header section
-export const MarketTopContainer = styled.div``;
+export const MarketTopContainer = styled.div`
+  width: 100%;
+  padding: 0.5rem 0;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    padding: 0.5rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    padding: 0.3rem;
+  }
+`;
 export const MarketTopHedding = styled.div`
   display: flex;
   align-items: center;
@@ -26,11 +79,28 @@ export const MarketTopImg = styled.div`
     max-height: 58px;
     max-width: 58px;
     border-radius: 10px;
+
+    @media (max-width: 1024px) {
+      max-height: 50px;
+      max-width: 50px;
+    }
+
+    @media (max-width: 600px) {
+      max-height: 40px;
+      max-width: 40px;
+    }
   }
 `;
 export const MarketTopHedText = styled.div`
   font-weight: 600;
   font-size: 18px;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 export const MarketTopIcon = styled.div`
   display: flex;
@@ -39,6 +109,16 @@ export const MarketTopIcon = styled.div`
   .icons {
     width: 18px;
     height: 18px;
+
+    @media (max-width: 1024px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 600px) {
+      width: 14px;
+      height: 14px;
+    }
   }
 `;
 export const MarketTopDesc = styled.div`
@@ -46,6 +126,14 @@ export const MarketTopDesc = styled.div`
   align-items: center;
   gap: 1rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 1024px) {
+    gap: 0.8rem;
+  }
+
+  @media (max-width: 600px) {
+    gap: 0.5rem;
+  }
 `;
 export const MarketVol = styled.div`
   font-weight: 400;
@@ -55,6 +143,26 @@ export const MarketVol = styled.div`
     width: 18px;
     height: 18px;
     margin-right: 0.5rem;
+
+    @media (max-width: 1024px) {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.3rem;
+    }
+
+    @media (max-width: 600px) {
+      width: 14px;
+      height: 14px;
+      margin-right: 0.2rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
   }
 `;
 export const MarketEndDate = styled.div`
@@ -65,6 +173,24 @@ export const MarketEndDate = styled.div`
     width: 18px;
     height: 18px;
     margin-right: 0.5rem;
+    @media (max-width: 1024px) {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.3rem;
+    }
+
+    @media (max-width: 600px) {
+      width: 14px;
+      height: 14px;
+      margin-right: 0.2rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
   }
 `;
 

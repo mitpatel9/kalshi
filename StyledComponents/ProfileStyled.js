@@ -42,7 +42,7 @@ export const ProfileMenuContainer = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
-    overflow-x: auto;
+    max-width: none;
   }
 `;
 export const ProfileMenuItem = styled.div`
@@ -107,7 +107,7 @@ export const ProfilesLeft = styled.div`
   }
   @media (max-width: 600px) {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.5rem;
   }
 `;
 export const ProfileHed = styled.div`
@@ -212,18 +212,19 @@ export const RightProfLoss = styled.div`
 `;
 export const RightTimeLine = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const TimelineItem = styled.div`
   font-weight: 600;
   color: #8c8c8c;
   font-size: 16px;
-  text-align: center;
   padding: 5px 8px;
 
   &.active {
     color: #fff;
     padding: 5px 8px;
-    border: 1px solid 8c8c8c;
+    border: none;
     border-radius: 5px;
     background-color: #8c8c8c;
   }
@@ -232,12 +233,20 @@ export const TimelineItem = styled.div`
   @media (max-width: 1024px) {
     font-size: 14px;
     padding: 4px 6px;
+
+    &.active {
+      padding: 4px 6px;
+    }
   }
 
   /* Mobile */
   @media (max-width: 600px) {
     font-size: 12px;
     padding: 3px 5px;
+
+    &.active {
+      padding: 3px 5px;
+    }
   }
 `;
 export const ProfileRightMiddle = styled.div`
@@ -328,21 +337,29 @@ export const AccountAuthSubText = styled.div`
   font-weight: 400;
   color: #000;
   font-size: 14px;
+`;
+export const AuthenticatorBox = styled.div`
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
 
-  span {
-    margin-top: 1rem;
-    font-weight: 600;
-    color: #000;
-    font-size: 10px;
+  &:hover {
+    background-color: #e6e8ea;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
   }
 `;
-export const AuthRadioButton = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+export const AuthenticatorBoxHedText = styled.div`
   font-weight: 600;
   color: #000;
   font-size: 14px;
+`;
+export const AuthenticatorBoxSubText = styled.div`
+  font-weight: 400;
+  color: #8c8c8c;
+  font-size: 12px;
 `;
 
 //activity
