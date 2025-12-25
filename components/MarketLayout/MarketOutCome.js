@@ -89,9 +89,9 @@ const MarketOutCome = () => {
           <OutcomeMarketIconReward id="reward">
             <Icon
               icon="lets-icons:dimond-alt"
-              width={18}
-              height={18}
+           
               color="#265cff"
+              className="icons"
               onClick={() => toggle()}
             />
           </OutcomeMarketIconReward>{" "}

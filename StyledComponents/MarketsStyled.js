@@ -976,6 +976,14 @@ export const OutcomeHedTitleLeft = styled.div`
   color: #8c8c8c;
   font-size: 12px;
   width: 40%;
+
+  @media (max-width: 1024px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 export const OutcomeHedTitleCenter = styled.div`
   width: 20%;
@@ -989,6 +997,14 @@ export const OutcomeHedTitleCenter = styled.div`
 
   .icons {
     cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
   }
 `;
 export const OutcomeHedTitleRight = styled.div`
@@ -1005,6 +1021,10 @@ export const OutcomeMarketListing = styled.div`
     border: 1px solid #dbdbdb;
     border-radius: 5px;
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 0.1rem;
+  }
 `;
 export const OutcomeMarketListingLeft = styled.div`
   cursor: pointer;
@@ -1017,11 +1037,19 @@ export const MarketOutcomeHedText = styled.div`
   &:hover {
     text-decoration: underline;
   }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 export const MarketOutcomeHedTextSub = styled.div`
   font-weight: 500;
   color: #8c8c8c;
   font-size: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
 `;
 export const OutcomeMarketListingCenter = styled.div`
   width: 20%;
@@ -1031,6 +1059,14 @@ export const OutcomeMarketListingCenter = styled.div`
   font-weight: 500;
   color: #000;
   font-size: 24px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const OutcomePrecentage = styled.div`
@@ -1041,10 +1077,29 @@ export const OutcomePrecentage = styled.div`
 
   .red {
     color: #e33939;
+    width: 18px;
+    height: 18px;
+
+    @media (max-width: 768px) {
+      width: 8px;
+      height: 8px;
+    }
   }
 
   .green {
     color: #30a159;
+    width: 18px;
+    height: 18px;
+
+    @media (max-width: 768px) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+    margin-left: 0.2rem;
   }
 `;
 export const OutcomeMarketListingRight = styled.div`
@@ -1056,6 +1111,17 @@ export const OutcomeMarketListingRight = styled.div`
 export const OutcomeMarketIconReward = styled.div`
   cursor: pointer;
   margin-right: 0.5rem;
+
+  .icons {
+    color: #000;
+    width: 18px;
+    height: 18px;
+
+    @media (max-width: 768px) {
+      width: 8px;
+      height: 8px;
+    }
+  }
 `;
 export const OutcomeMarketYesBtn = styled.div`
   font-weight: 600;
@@ -1066,6 +1132,18 @@ export const OutcomeMarketYesBtn = styled.div`
   padding: 8px 36px;
   margin-right: 0.5rem;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 2px 12px;
+    font-size: 8px;
+    margin-right: 0.3rem;
+  }
+
+  @media (max-width: 400px) {
+    padding: 2px 8px;
+    font-size: 6px;
+    margin-right: 0.1rem;
+  }
 `;
 export const OutcomeMarketNoBtn = styled.div`
   font-weight: 600;
@@ -1076,23 +1154,52 @@ export const OutcomeMarketNoBtn = styled.div`
   padding: 8px 36px;
   cursor: pointer;
   margin-right: 0.5rem;
+
+  @media (max-width: 768px) {
+    padding: 2px 12px;
+    font-size: 8px;
+    margin-right: 0.3rem;
+  }
+  @media (max-width: 400px) {
+    padding: 2px 8px;
+    font-size: 6px;
+    margin-right: 0.1rem;
+  }
 `;
 
 export const OutcomeMarketLiquidity = styled.div`
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-top: 0.3rem;
+  }
 `;
 export const LiquidityChartMenu = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
 `;
 export const LiquidityChartMenuItem = styled.div`
-  font-weight: 600;
+  font-weight: 500;
   color: #8c8c8c;
   font-size: 14px;
 
   &.active {
+    font-weight: 600;
     color: #000;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
   }
 `;
 export const GraphHedding = styled.div`
@@ -1102,6 +1209,14 @@ export const GraphHedding = styled.div`
   color: #8c8c8c;
   font-size: 12px;
   padding-bottom: 0.5rem;
+
+  @media (max-width: 1024px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 export const LiquidityChart = styled.div`
   width: 100%;
