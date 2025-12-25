@@ -130,11 +130,6 @@ export const ProfileImg = styled.div`
   }
 
   /* Mobile */
-  @media (max-width: 600px) {
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-  }
 `;
 export const ProfileAccount = styled.div``;
 export const ProfileName = styled.div`
@@ -160,8 +155,6 @@ export const ProfileSecretKey = styled.div`
 export const ProfileLeftBottom = styled.div`
   display: flex;
   justify-content: space-around;
-
- 
 `;
 export const YourPosition = styled.div`
   text-align: center;
@@ -353,17 +346,35 @@ export const AuthRadioButton = styled.div`
 `;
 
 //activity
-export const ActivityContainer = styled.div``;
+export const ActivityContainer = styled.div`
+
+`;
 export const ActivityHedText = styled.div`
   font-weight: 600;
   color: #000;
-  font-size: 24px;
+  font-size: 24px;\
+    @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 export const ActivityMenu = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin: 1rem 0rem;
+
+    @media (max-width: 1024px) {
+    gap: 0.4rem;
+  }
+
+  @media (max-width: 600px) {
+    gap: 0.3rem;
+    margin: 0.5rem 0rem;
+  }
 `;
 export const ActivityMenuItem = styled.div`
   background: #30a159;
@@ -384,6 +395,16 @@ export const ActivityMenuItem = styled.div`
     color: #fff;
     background: #000;
     border: 2px solid #000;
+  }
+
+    @media (max-width: 1024px) {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 5px 10px;
+    font-size: 10px;
   }
 `;
 export const ActivityData = styled.div`
@@ -543,10 +564,27 @@ export const ComProcessContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    padding: 1rem 2rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.8rem 1rem;
+  }
 `;
 
 export const ComProcessInner = styled.div`
   width: 60%;
+  /* Tablet: increase width to 80% */
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+
+  /* Mobile: full width */
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const ComProcesBack = styled.div`
@@ -559,6 +597,18 @@ export const ComProcesBack = styled.div`
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    font-size: 13px;
+    gap: 0.8rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 12px;
+    gap: 0.5rem;
+  }
 `;
 export const TimeLineContainerSignUp = styled.div`
   width: 100%;
