@@ -35,8 +35,7 @@ const auth = () => {
             <WelcomeContainer>
               <WelcomeText>Welcome to {webSiteName.domain}</WelcomeText>
               <WelcomeSubText>
-                We’re glad to see you again. Log in to access your account,
-                manage your information, and continue where you left off.
+               We’re pleased to have you back. Sign in to access your account, manage your information, and continue right where you left off.
               </WelcomeSubText>
             </WelcomeContainer>
           )}

@@ -40,9 +40,9 @@ const HeaderLayout = () => {
           <SButton onClick={() => router.push("/auth")}>
             <span>Get Started</span>
           </SButton>
-          <SButton onClick={() => router.push("/payment")}>
+          {/* <SButton onClick={() => router.push("/payment")}>
             <span>Deposit cash</span>
-          </SButton>
+          </SButton> */}
           <HeaderMenuIcon>
             <Icon
               icon="ix:trophy-filled"

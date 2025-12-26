@@ -45,9 +45,9 @@ export const RightDiv = styled.div`
 `;
 export const Logo = styled.div`
   cursor: pointer;
-  font-weight: 1000;
+  font-weight: 700;
   font-size: 32px;
-  color: #ff0080;
+  color: var(--primary--color);
 
   /* Tablet */
   @media (max-width: 1024px) {
@@ -75,7 +75,7 @@ export const Logo = styled.div`
 
 export const SearchBar = styled.div`
   position: relative;
-  width: 280px;
+  width: 350px;
   max-width: 100%;
   margin-right: 0.5rem;
 
@@ -92,17 +92,17 @@ export const SearchBar = styled.div`
     width: 100%;
     padding: 10px 12px 10px 40px;
     border-radius: 12px;
-    border: 1px solid var(--primary--color);
-    background-color: #ffcdc98f;
+    border: none;
+    background-color: var(--primary-bg-input);
     color: var(--primary--black);
     font-size: 12px;
     transition: all 0.2s ease;
 
     &:focus {
       background-color: var(--primary--white);
-      border-color: var(--primary--color);
+      border: 2px solid var(--primary--color);
       outline: none;
-      box-shadow: 0 0 0 2px rgba(253, 121, 121, 0.2);
+      box-shadow: none;
     }
   }
 
@@ -153,11 +153,6 @@ export const SButton = styled.div`
 
   @media (max-width: 1024px) {
     padding: 7px 14px;
-  }
-
-  /* Mobile */
-  @media (max-width: 600px) {
-    display: none;
   }
 `;
 
@@ -219,11 +214,11 @@ export const ProfileBackBtn = styled.div`
   cursor: pointer;
   font-weight: 1000;
   font-size: 24px;
-  color: #7928ca;
+  color: var(--primary--color);
   align-items: center;
   justify-content: space-between;
 
-    @media (min-width: 600px) {
+  @media (min-width: 600px) {
     display: none;
   }
 `;
@@ -377,7 +372,7 @@ export const MenuContainer = styled.div`
 export const MenuItem = styled.div`
   font-weight: 600;
   font-size: 14px;
-  color: #8c8c8c;
+  color: var(--primary-light-gray);
   cursor: pointer;
 
   &:hover {
@@ -411,6 +406,7 @@ export const SubMenuContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
   /* Tablet */
   @media (max-width: 1024px) {
     gap: 10px;
@@ -424,24 +420,23 @@ export const SubMenuContainer = styled.div`
   }
 `;
 export const SubMenuItem = styled.div`
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   color: var(--primary--black);
   cursor: pointer;
   border-radius: 50px;
   padding: 0.5rem;
-
-  border: 1px solid #8c8c8c;
+  border: 1px solid var(--primary-subtext);
 
   &:hover {
     color: var(--primary--color);
-    background-color: #ffcdc98f;
+    background-color: var(--bg-light-green);
     border: 1px solid var(--primary--color);
   }
 
   &.active {
     color: var(--primary--color);
-    background-color: #ffcdc98f;
+    background-color: var(--bg-light-green);
     border: 1px solid var(--primary--color);
   }
 
@@ -496,7 +491,7 @@ export const IconInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffcdc98f;
+  background-color: var(--bg-light-green);
   border-radius: 0.5rem;
   margin-right: 10px;
 `;
@@ -953,6 +948,16 @@ export const JoinningContainer = styled.div`
   margin: 2rem 0rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0rem;
+  }
 `;
 export const LeftJoining = styled.div`
   display: flex;
@@ -960,22 +965,48 @@ export const LeftJoining = styled.div`
   justify-content: center;
   width: 45%;
   padding: 1.5rem;
+
+  @media (max-width: 1024px) {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem 0;
+  }
 `;
 export const WelcomeContainer = styled.div``;
 export const RightJoining = styled.div`
   width: 45%;
+
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const WelcomeText = styled.div`
   font-size: 24px;
   font-weight: 600;
   color: var(--primary--color);
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 export const WelcomeSubText = styled.div`
   font-size: 12px;
-  font-weight: 600;
-  color: #b5b5b5;
+  font-weight: 500;
+  color: var(--primary-light-gray);
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 11px;
+  }
 `;
 export const JoinToggle = styled.div`
   display: flex;
@@ -996,6 +1027,11 @@ export const LoginName = styled.div`
     background: var(--primary--color);
     color: var(--primary--white);
   }
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+    padding: 8px;
+  }
 `;
 export const SignUpName = styled.div`
   font-weight: 600;
@@ -1011,13 +1047,62 @@ export const SignUpName = styled.div`
     background: var(--primary--color);
     color: var(--primary--white);
   }
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+    padding: 8px;
+  }
 `;
 export const JoinContainer = styled.div``;
 export const LoginContainer = styled.div`
   padding: 1rem 0rem;
+  label {
+    color: var(--primary--color);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary-light-gray);
+    background-color: var(--primary--white);
+    color: var(--primary--black);
+    font-size: 12px;
+    transition: all 0.2s ease;
+
+    &:focus {
+      background-color: var(--primary--white);
+      border: 2px solid var(--primary--color);
+      outline: none;
+      box-shadow: none;
+    }
+  }
 `;
 export const RegisterContainer = styled.div`
   padding: 1rem 0rem;
+  label {
+    color: var(--primary--color);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary-light-gray);
+    background-color: var(--primary--white);
+    color: var(--primary--black);
+    font-size: 12px;
+    transition: all 0.2s ease;
+
+    &:focus {
+      background-color: var(--primary--white);
+      border: 2px solid var(--primary--color);
+      outline: none;
+      box-shadow: none;
+    }
+  }
 `;
 export const JoinningButton = styled.div`
   background: var(--primary--color);
@@ -1029,6 +1114,11 @@ export const JoinningButton = styled.div`
   cursor: pointer;
   font-size: 14px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+    padding: 8px;
+  }
 `;
 export const TermsandCondition = styled.div`
   color: #b5b5b5;
@@ -1150,12 +1240,15 @@ export const SliderMarketContainer = styled.div`
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 5px;
   overflow: hidden;
+
   .slick-dots {
     bottom: -10px !important;
   }
+
   .slick-dots li button:before {
     font-size: 10px;
   }
+
   @media (max-width: 1024px) {
     padding: 1.5rem 1rem;
   }
@@ -1163,11 +1256,16 @@ export const SliderMarketContainer = styled.div`
   /* Mobile */
   @media (max-width: 600px) {
     padding: 1rem 0.75rem;
+
+    .slick-dots li button:before {
+      font-size: 6px;
+    }
   }
 `;
 export const SliderContainer = styled.div`
   display: flex !important;
   justify-content: space-around;
+
   /* Tablet */
   @media (max-width: 1024px) {
     gap: 1.5rem;

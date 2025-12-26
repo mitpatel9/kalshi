@@ -53,8 +53,8 @@ export const DeleteAcButton = styled.div`
   font-size: 12px;
   display: flex;
   justify-content: center;
-  border: 2px solid #fd7979;
-  background: #fd7979;
+  border: 2px solid var(--primary--color);
+  background: var(--primary--color);
   color: #fff;
 `;
 export const DeleteBottonText = styled.div`

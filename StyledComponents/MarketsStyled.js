@@ -222,7 +222,7 @@ export const OrderTopSubText = styled.div`
   font-size: 12px;
   span {
     font-size: 14px;
-    color: #fd7979;
+    color: var(--primary--color);
   }
 `;
 export const OrderMenu = styled.div`
@@ -242,7 +242,7 @@ export const BuySellMenu = styled.div`
   font-size: 16px;
 
   &.active {
-    color: #fd7979;
+    color: var(--primary--color);
   }
 `;
 export const OrderOption = styled.div`
@@ -264,10 +264,10 @@ export const OderYesBtn = styled.div`
   font-size: 12px;
   display: flex;
   justify-content: center;
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
 
   &.active {
-    background: #fd7979;
+    background: var(--primary--color);
     color: #fff;
   }
 `;
@@ -280,15 +280,15 @@ export const OrderNoBtn = styled.div`
   font-size: 12px;
   display: flex;
   justify-content: center;
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
 
   &.active {
-    background: #fd7979;
+    background: var(--primary--color);
     color: #fff;
   }
 `;
 export const OrderContract = styled.div`
-  border: 2px solid #fd7979;
+  border: 2px solid var(--primary--color);
   border-radius: 10px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -307,7 +307,7 @@ export const ContracHedText = styled.div`
 export const ContracIntrest = styled.div`
   font-weight: 600;
   font-size: 12px;
-  color: #fd7979;
+  color: var(--primary--color);
 `;
 export const ContracInput = styled.div`
   width: 30%;
@@ -365,7 +365,7 @@ export const OderTradeButton = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  background: #fd7979;
+  background: var(--primary--color);
   color: #fff;
 `;
 
@@ -377,7 +377,7 @@ export const TermsandConditionOrderBook = styled.div`
   text-align: center;
   span {
     font-weight: 600;
-    color: #fd7979;
+    color: var(--primary--color);
     cursor: pointer;
   }
 `;
@@ -448,7 +448,7 @@ export const RulesIcon = styled.div`
 export const RulesOutcomeDropDown = styled.div`
   font-weight: 400;
   font-size: 16px;
-  color: #fd7979;
+  color: var(--primary--color);
   cursor: pointer;
   span {
     width: 18px;
@@ -474,8 +474,8 @@ export const FullRulesBtn = styled.div`
   display: flex;
   justify-content: center;
   background: #ffff;
-  color: #fd7979;
-  border: 1px solid #fd7979;
+  color: var(--primary--color);
+  border: 1px solid var(--primary--color);
 `;
 export const HelpCenterBtn = styled.div`
   font-weight: 600;
@@ -486,14 +486,14 @@ export const HelpCenterBtn = styled.div`
   display: flex;
   justify-content: center;
   background: #fff;
-  color: #fd7979;
-  border: 1px solid #fd7979;
+  color: var(--primary--color);
+  border: 1px solid var(--primary--color);
 `;
 
 //Market Context section
 export const ContectContainer = styled.div`
   margin: 1rem 0rem;
-  border: 1px solid #fd7979;
+  border: 1px solid var(--primary--color);
   border-radius: 5px;
 `;
 export const MarketContextHeading = styled.div`
@@ -509,7 +509,7 @@ export const ContextHed = styled.div`
 export const ContextIcon = styled.div`
   font-weight: 600;
   font-size: 12px;
-  color: #fd7979;
+  color: var(--primary--color);
 `;
 export const MarketContextDesc = styled.div`
   padding: 0rem 1rem;

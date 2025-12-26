@@ -7,10 +7,13 @@ body {
 }
 
 :root {
-  --primary--color: #fd7979;
+  --primary--color: #0ac284;
+  --primary-light-gray:#c9c9c9;
+  --bg-light-green:#ebfaf5;
   --primary--white:#fff;
   --primary--black:#000;
-  --gray: #6b7280;
+  --primary-subtext: #cccccc;
+  --primary-bg-input: #ededed;
 }
 
 * {
