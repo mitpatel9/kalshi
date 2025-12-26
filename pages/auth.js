@@ -18,6 +18,7 @@ import {
   WelcomeText,
 } from "@/StyledComponents/LayoutStyled";
 import { BorderRight } from "@/StyledComponents/ProfileStyled";
+import { webSiteName } from "@/utils/enums";
 import React, { useState } from "react";
 import { FormGroup, Input, Label } from "reactstrap";
 
@@ -32,7 +33,7 @@ const auth = () => {
         <LeftJoining>
           {switchTab == "login" && (
             <WelcomeContainer>
-              <WelcomeText>Welcome to Kalshi</WelcomeText>
+              <WelcomeText>Welcome to {webSiteName.domain}</WelcomeText>
               <WelcomeSubText>
                 We’re glad to see you again. Log in to access your account,
                 manage your information, and continue where you left off.
@@ -118,7 +119,7 @@ const auth = () => {
             )}
             <TermsandCondition>
               By continuing, you acknowledge and agree to{" "}
-              <span>Kalshi’s legal terms</span> , which we recommend reviewing
+              <span>{webSiteName.domain}’s legal terms</span> , which we recommend reviewing
             </TermsandCondition>
           </JoinContainer>
         </RightJoining>

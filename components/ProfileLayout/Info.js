@@ -6,6 +6,7 @@ import {
   ComProcessSubHedText,
   ComProcesSubText,
 } from "@/StyledComponents/ProfileStyled";
+import { webSiteName } from "@/utils/enums";
 import React from "react";
 import { Input } from "reactstrap";
 
@@ -18,7 +19,7 @@ const Info = (props) => {
     <ComProcessInner>
       <ComProcessSubHedText>Enter your info</ComProcessSubHedText>
       <ComProcesSubText>
-        As a federally-regulated financial exchange, Kalshi collects your info
+        As a federally-regulated financial exchange, {webSiteName.domain} collects your info
         to comply with applicable laws.
       </ComProcesSubText>
       <ComProcesInputAddress>

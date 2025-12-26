@@ -18,6 +18,7 @@ import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import { Input } from "reactstrap";
 import DeleteAccount from "../Models/DeleteAccount";
+import { webSiteName } from "@/utils/enums";
 
 const AccountSecurity = (props) => {
   const [isDelete, setIsDelete] = useState(false);
@@ -47,7 +48,7 @@ const AccountSecurity = (props) => {
       </ComplateSetupData>
       <AccountHedTitle>Two-factor Authentication</AccountHedTitle>
       <AccountAuthSubText>
-        Help keep your Kalshi account safe. This helps prevent anyone from
+        Help keep your {webSiteName.domain} account safe. This helps prevent anyone from
         accessing your account, even if they know your password.
       </AccountAuthSubText>
 

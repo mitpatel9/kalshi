@@ -10,6 +10,7 @@ import {
   MiddleLeft,
   MiddleRight,
 } from "@/StyledComponents/ModalStyled";
+import { webSiteName } from "@/utils/enums";
 import { Icon } from "@iconify/react";
 import React from "react";
 import { Modal } from "reactstrap";
@@ -46,13 +47,13 @@ const DeleteAccount = (props) => {
             <Icon icon="healthicons:no-24px" width={28} height={28} />
           </MiddleLeft>
           <MiddleRight>
-            <ConfirmPositionHed>Withdraw Kalshi funds</ConfirmPositionHed>
+            <ConfirmPositionHed>Withdraw {webSiteName.domain} funds</ConfirmPositionHed>
             <ConfirmPositionSub>You have $0.00</ConfirmPositionSub>
           </MiddleRight>
         </DeleteAcMiddle>
         <DeleteAcButton>Confirm</DeleteAcButton>
         <DeleteBottonText>
-          Need help? Please contact support@kalshi.com
+          Need help? Please contact support@{webSiteName.domain}.com
         </DeleteBottonText>
       </DeleteAcContainer>
     </Modal>

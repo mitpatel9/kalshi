@@ -15,6 +15,7 @@ import { useRouter } from "next/router";
 import { Hr } from "@/StyledComponents/CommonStyled";
 import ProfileMenuView from "./ProfileMenuView";
 import Notification from "./Notification";
+import { webSiteName } from "@/utils/enums";
 
 const HeaderLayout = () => {
   const router = useRouter();
@@ -25,8 +26,8 @@ const HeaderLayout = () => {
     <>
       <HeaderDiv>
         <LeftDiv>
-          <Logo onClick={() => router.push("/")}>Avrodha</Logo>
-          <Motto>Knowledge Is The New currency.</Motto>
+          <Logo onClick={() => router.push("/")}>{webSiteName.domain}</Logo>
+          {/* <Motto>Knowledge Is The New currency.</Motto> */}
         </LeftDiv>
         <RightDiv>
           <SearchBar>

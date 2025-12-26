@@ -30,6 +30,7 @@ import React from "react";
 import Test from "../../asset/Image/test.jpg";
 import Image from "next/image";
 import ProfileGraph from "../Graph/ProfileGraph";
+import { webSiteName } from "@/utils/enums";
 
 const Profile = () => {
   return (
@@ -96,7 +97,7 @@ const Profile = () => {
               height={12}
             />
           </ProfileRightMiddleIndicator>
-          <ProfileRightLogo>Kalshi</ProfileRightLogo>
+          <ProfileRightLogo>{webSiteName.domain}</ProfileRightLogo>
         </ProfileRightMiddle>
           <RightDataIndicator>past Day</RightDataIndicator>
         <RightProfileCharts>

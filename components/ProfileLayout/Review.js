@@ -5,6 +5,7 @@ import {
   ComProcesSubText,
   ReviewIcons,
 } from "@/StyledComponents/ProfileStyled";
+import { webSiteName } from "@/utils/enums";
 import { Icon } from "@iconify/react";
 import React from "react";
 
@@ -17,7 +18,7 @@ const Review = () => {
       <ComProcessSubHedText>Application submitted</ComProcessSubHedText>
       <ComProcesSubText>
         We will review your application shortly. If it has been more than 24
-        hours since you have submitted, please reach out to support@kalshi.com
+        hours since you have submitted, please reach out to support@{webSiteName.domain}.com
       </ComProcesSubText>
       <ComProcesBtn>Expolre More</ComProcesBtn>
     </ComProcessInner>

@@ -60,18 +60,18 @@ export const Logo = styled.div`
   }
 `;
 
-export const Motto = styled.div`
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 10px;
-  color: #fd7979;
-  margin-top: -9px;
-  /* Mobile */
-  @media (max-width: 600px) {
-    font-size: 9px;
-    margin-top: -6px;
-  }
-`;
+// export const Motto = styled.div`
+//   cursor: pointer;
+//   font-weight: 600;
+//   font-size: 10px;
+//   color: #fd7979;
+//   margin-top: -9px;
+//   /* Mobile */
+//   @media (max-width: 600px) {
+//     font-size: 9px;
+//     margin-top: -6px;
+//   }
+// `;
 
 export const SearchBar = styled.div`
   position: relative;
@@ -1653,5 +1653,96 @@ export const RightListingTableSubName = styled.div`
   font-weight: 400;
   font-size: 12px;
   span {
+  }
+`;
+
+//watchlist
+export const WatchListConatainer = styled.div`
+  margin-top: 2rem;
+`;
+export const WatchalistHed = styled.div`
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary--black);
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+`;
+export const WatchListListing = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const WatchListLeft = styled.div`
+  width: 80%;
+`;
+export const WatchlistLeftHedText = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
+`;
+export const WatchlistLeftHedSubText = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #b5b5b5;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
+`;
+export const WatchListRight = styled.div`
+  width: 20%;
+`;
+export const WatchListRate = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  justify-content: center;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
+
+  span {
+    font-weight: 500;
+    color: #000;
+    font-size: 12px;
+    margin-left: 0.6rem;
+
+    .red {
+      color: #e33939;
+      width: 18px;
+      height: 18px;
+
+      @media (max-width: 768px) {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    .green {
+      color: #30a159;
+      width: 18px;
+      height: 18px;
+
+      @media (max-width: 768px) {
+        width: 8px;
+        height: 8px;
+      }
+    }
   }
 `;

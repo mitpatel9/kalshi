@@ -6,6 +6,7 @@ import {
   TransfersPortFolioText,
   TransfersTextDesc,
 } from "@/StyledComponents/ProfileStyled";
+import { webSiteName } from "@/utils/enums";
 import { Icon } from "@iconify/react";
 import React from "react";
 
@@ -29,14 +30,14 @@ const Transfers = () => {
       </TransfersTextDesc>
       <TransfersTextDesc>
         <Icon icon="dashicons:yes" className="icons" />
-        Kalshi is currently accepting deposits in USDC on Solana, Ethereum,
+        {webSiteName.domain} is currently accepting deposits in USDC on Solana, Ethereum,
         Base, Arbitrum, and Optimism. You may need to bridge or swap funds to a
         compatible chain + USDC before depositing.
         
       </TransfersTextDesc>
       <TransfersButton>
         <Icon icon="uil:down-arrow" className="icons" />
-        Deposit to Kalshi
+        Deposit to {webSiteName.domain}
       </TransfersButton>
     </TransfersContainer>
   );
