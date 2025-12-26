@@ -16,10 +16,12 @@ import { Hr } from "@/StyledComponents/CommonStyled";
 import ProfileMenuView from "./ProfileMenuView";
 import Notification from "./Notification";
 import { webSiteName } from "@/utils/enums";
+import SearchBarModal from "./SearchBarModal";
 
 const HeaderLayout = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const[openSearch, setOpenSearch] = useState(false);
   const [notify, setNotify] = useState(false);
 
   return (
@@ -35,6 +37,7 @@ const HeaderLayout = () => {
             <Input
               type="Search markets or profiles..."
               placeholder="Search markets or profiles..."
+              onClick={() => setOpenSearch(!openSearch)}
             />
           </SearchBar>
           <SButton onClick={() => router.push("/auth")}>
@@ -65,6 +68,7 @@ const HeaderLayout = () => {
         </RightDiv>
       </HeaderDiv>{" "}
       <Hr />
+      <SearchBarModal openSearch={openSearch} setOpenSearch={setOpenSearch}/>
       <ProfileMenuView open={open} setOpen={setOpen} />
       <Notification notify={notify} setNotify={setNotify} />
     </>

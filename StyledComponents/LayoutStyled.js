@@ -889,7 +889,7 @@ export const StartHedding = styled.div`
 
   /* Mobile */
   @media (max-width: 600px) {
-    font-size: 8px;
+    font-size: 6px;
   }
 `;
 export const StartHeddingSub = styled.div`
@@ -898,7 +898,7 @@ export const StartHeddingSub = styled.div`
   color: #b5b5b5;
   /* Mobile */
   @media (max-width: 600px) {
-    font-size: 8px;
+    font-size: 6px;
   }
 `;
 export const RewardListingEnd = styled.div`
@@ -1860,5 +1860,83 @@ export const WatchListRate = styled.div`
     @media (max-width: 768px) {
       font-size: 8px;
     }
+  }
+`;
+
+// search bar modal
+export const Searchbar = styled.div`
+  display: none;
+
+  &.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+  }
+  @media (min-width: 1025px) {
+    &.active {
+      background: transparent;
+    }
+  }
+`;
+export const SearchbarInner = styled.div`
+  position: absolute;
+  top: 60px;
+  right: 275px;
+  background: var(--primary--white);
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 10000;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    top: 60px;
+    right: 275px;
+    max-width: 220px;
+  }
+`;
+
+export const SearchbarListing = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+  gap: 10px;
+  /* Tablet view */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    padding: 0.8rem 0;
+    gap: 8px;
+  }
+`;
+export const SearchbarImg = styled.div`
+  .image {
+    max-height: 48px;
+    max-width: 48px;
+    border-radius: 10px;
+
+    /* Tablet view */
+    @media (max-width: 1024px) and (min-width: 769px) {
+      max-height: 40px;
+      max-width: 40px;
+      border-radius: 8px;
+    }
+  }
+`;
+export const SearchbarHedTitle = styled.div`
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  /* Tablet view */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    font-size: 14px;
   }
 `;
