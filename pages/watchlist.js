@@ -32,21 +32,20 @@ const watchlist = () => {
           </WatchListLeft>
           <WatchListRight>
             <WatchListRate>
-              80¢{" "}
+              50¢{" "}
               <span>
                 <Icon
                   icon="prime:sort-up-fill"
                   className="green"
-                  width={16}
-                  height={36}
+                  
                 />{" "}
-                1
+                10%
               </span>
             </WatchListRate>
           </WatchListRight>
         </WatchListListing>
         <Hr />
-         <WatchListListing>
+        <WatchListListing>
           <WatchListLeft>
             <WatchlistLeftHedText>
               Central Michigan at Northwestern
@@ -58,17 +57,16 @@ const watchlist = () => {
               80¢{" "}
               <span>
                 <Icon
-                  icon="prime:sort-up-fill"
-                  className="green"
-                  width={16}
-                  height={36}
+                  icon="prime:sort-down-fill"
+                  className="red"
+                 
                 />{" "}
-                1
+                8%
               </span>
             </WatchListRate>
           </WatchListRight>
         </WatchListListing>
-        <Hr />``
+        <Hr />
       </WatchListConatainer>
     </SiteLayout>
   );

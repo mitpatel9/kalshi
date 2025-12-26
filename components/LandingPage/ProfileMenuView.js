@@ -7,7 +7,9 @@ import {
   ProfileSideBar,
   ProfileSidebarInner,
   SidebarMenuItem,
+  ProfileBackBtn,
 } from "@/StyledComponents/LayoutStyled";
+import { webSiteName } from "@/utils/enums";
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
 import React from "react";
@@ -20,6 +22,16 @@ const ProfileMenuView = (props) => {
       onClick={() => props.setOpen(!props.open)}
     >
       <ProfileSidebarInner>
+        <ProfileBackBtn>
+          {webSiteName.domain}{" "}
+          <Icon
+            icon="mingcute:close-fill"
+            className="icons"
+            width={22}
+            height={22}
+             onClick={() => props.setOpen(!props.open)}
+          />
+        </ProfileBackBtn>
         <ProfileLeaderBoardContainer>
           <LeaderBoardInner onClick={() => router.push("/leaderboard")}>
             <ProfilemenuIcons>
@@ -48,8 +60,12 @@ const ProfileMenuView = (props) => {
         <SidebarMenuItem onClick={() => router.push("/profile")}>
           Profile
         </SidebarMenuItem>
-        <SidebarMenuItem onClick={() => router.push("/rewards")}>Rewards</SidebarMenuItem>
-        <SidebarMenuItem onClick={() => router.push("/watchlist")}>Watchlist</SidebarMenuItem>
+        <SidebarMenuItem onClick={() => router.push("/rewards")}>
+          Rewards
+        </SidebarMenuItem>
+        <SidebarMenuItem onClick={() => router.push("/watchlist")}>
+          Watchlist
+        </SidebarMenuItem>
         <SidebarMenuItem>Support</SidebarMenuItem>
         <SidebarMenuItem>Log Out</SidebarMenuItem>
       </ProfileSidebarInner>

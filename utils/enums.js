@@ -1,4 +1,4 @@
 export const webSiteName = {
-  domain: "Kasata",
+  domain: "Kasate",
   moto: "Knowledge Is The New currency.",
 };

@@ -47,7 +47,7 @@ export const Logo = styled.div`
   cursor: pointer;
   font-weight: 1000;
   font-size: 32px;
-  color: #fd7979;
+  color: #ff0080;
 
   /* Tablet */
   @media (max-width: 1024px) {
@@ -206,16 +206,32 @@ export const ProfileSidebarInner = styled.div`
     right: 0;
     height: 100vh;
     width: 85%;
-    max-width: 300px;
+    width: 100%;
     border-radius: 0;
     padding: 20px;
     background: var(--primary--white);
   }
 `;
 
+export const ProfileBackBtn = styled.div`
+  display: flex;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-weight: 1000;
+  font-size: 24px;
+  color: #7928ca;
+  align-items: center;
+  justify-content: space-between;
+
+    @media (min-width: 600px) {
+    display: none;
+  }
+`;
+
 export const ProfileLeaderBoardContainer = styled.div`
   display: flex;
   gap: 0.5rem;
+
   /* Mobile */
   @media (max-width: 600px) {
     justify-content: space-around;
@@ -247,6 +263,7 @@ export const ProfilemenuIconsName = styled.div`
 
   /* Mobile */
   @media (max-width: 600px) {
+    margin: 0.5rem 0rem;
     font-size: 11px;
   }
 `;
@@ -1727,7 +1744,6 @@ export const WatchListRate = styled.div`
       color: #e33939;
       width: 18px;
       height: 18px;
-
       @media (max-width: 768px) {
         width: 8px;
         height: 8px;
@@ -1738,11 +1754,13 @@ export const WatchListRate = styled.div`
       color: #30a159;
       width: 18px;
       height: 18px;
-
       @media (max-width: 768px) {
         width: 8px;
         height: 8px;
       }
+    }
+    @media (max-width: 768px) {
+      font-size: 8px;
     }
   }
 `;
