@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "id": 1,
+    "name": "Matka play",
+    "path": "/matkaBetOption"
+  },
+  {
+    "id": 1,
+    "name": "Panel Chart",
+    "path": "/panelChartList"
+  },
+  {
+    "id": 1,
+    "name": "Profile",
+    "path": "/profile"
+  }
+]

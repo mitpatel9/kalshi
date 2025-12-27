@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "icon": "pajamas:dashboard",
+    "name": "Dashboard",
+    "path": "/dashboard"
+  },
+  {
+    "id": 2,
+    "icon": "wpf:administrator",
+    "name": "Admin",
+    "path": "/dashboard/admin"
+  },
+  {
+    "id": 3,
+    "icon": "ix:customer",
+    "name": "Customer",
+    "path": "/dashboard/customer"
+  },
+  {
+    "id": 4,
+    "icon": "game-icons:card-ace-clubs",
+    "name": "Club",
+    "path": "/dashboard/club"
+  },
+  {
+    "id": 5,
+    "icon": "hugeicons:market-analysis",
+    "name": "Market",
+    "path": "/dashboard/market"
+  },
+  {
+    "id": 6,
+    "icon": "mdi:alphabet-b-circle",
+    "name": "Bet",
+    "path": "/dashboard/bet"
+  },
+  {
+    "id": 7,
+    "icon": "mdi:bank",
+    "name": "Transaction",
+    "path": "/dashboard/transaction"
+  },
+  {
+    "id": 8,
+    "icon": "ix:inquiry",
+    "name": "Inquiry",
+    "path": "/dashboard/inquiry"
+  },
+  {
+    "id": 9,
+    "icon": "hugeicons:return-request",
+    "name": "Requests",
+    "path": "/dashboard/request"
+  },
+  {
+    "id": 10,
+    "icon": "gis:search-country",
+    "name": "Country",
+    "path": "/dashboard/country"
+  },
+  {
+    "id": 11,
+    "icon": "ic:baseline-manage-history",
+    "name": "History",
+    "path": "/dashboard/history"
+  },
+
+  {
+    "id": 12,
+    "icon": "solar:settings-linear",
+    "name": "Site Setting",
+    "path": "/dashboard/siteSetting"
+  },
+
+  {
+    "id": 13,
+    "icon": "ant-design:logout-outlined",
+    "name": "Log Out"
+  }
+]
